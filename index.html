@@ -349,19 +349,19 @@
 						<form name="commentForm" id="commentForm" class="form" onsubmit="javasript:;" action enctype="multipart/form-data">
 						<fieldset>
 							<legend><span>Свадебный сайт-приглашение</span></legend>
-								<select name="design" id="design">
+								<select name="design" id="design" style="margin-bottom: 2px;">
 									<option value="не указано" disabled selected style='display:none;'>Выберите дизайн</option>
 									<option value="Natural">Natural</option>
 									<option value="Woodland">Woodland</option>
 									<option value="Love">Love</option>
 									<option value="Индивидуальный">Индивидуальный</option>
 								</select><br/>
-								<input name="name" id="name" type="text" placeholder="Ваше имя"></br>
-								<input name="tel" id="tel" type="tel" placeholder="Ваш телефон"/></br>
-								<input name="email" id="email" type="email" placeholder="E-mail:"/></br>
-								<label for="file">Приложите заполненную анкету:</label><br/>
-								<input name="doc" id="file" type="file"><br/>
-								<select name="pay" id="pay">
+								<input name="name" id="name" type="text" placeholder="Ваше имя" required style="margin-bottom: 2px;"></br>
+								<input name="tel" id="tel" type="tel" placeholder="Ваш телефон" style="margin-bottom: 2px;"></br>
+								<input name="email" id="email" type="email" placeholder="E-mail:" required></br>
+								<label for="file">Приложите заполненную <a href="/files/anketa.odt"><strong>анкету</strong></a>:</label><br/>
+								<input name="doc" id="file" type="file">
+								<select name="pay" id="pay" style="margin-bottom: 5px;">
 									<option value="не указано" disabled selected style='display:none;'>Форма оплаты</option>
 									<option value="Наличная">Наличная</option>
 									<option value="Безналичная">Безналичная</option>
@@ -373,10 +373,10 @@
 						</div>
 						<div id="avalible" style="display: none; text-align: center;">
 							<h4>Проверка доступности адреса</h4><br>
-							<p><input type="text" placeholder="example" style="text-align: right;" onchange="avalible(this)">
+							<p><input type="text" placeholder="example" style="text-align: right;" onkeyup="avalible(this)">
 								<strong> .credolove.com</strong></p>
 
-							<p id="status"></p>
+							<p id="status">Введите адрес</p>
 						</div>
 					</div>
 		  	  </div>
@@ -407,7 +407,7 @@
                                 <span class="menu_title">  выберите домен</span> <br>
                                 <span class="menu_sep"> </span> <br>
                                 <span class="menu_desc"> Проверить доступность доменного имени.Ведите имя страницы латинскими буквами </span><br>
-                                <a href="#avalible" class="button-1 btn-hover modalbox" data-animation="animated fadeInRight"> Проверка URL-адреса </a> <br>
+                                <a href="#avalible" rel="nofollow" class="button-1 btn-hover modalbox" data-animation="animated fadeInRight"> Проверка URL-адреса </a> <br>
 
                              </div>
                              <div class="menu_item border item_top">
@@ -442,7 +442,7 @@
                                 <span class="menu_title">  выберите домен</span> <br>
                                 <span class="menu_sep"> </span> <br>
                                 <span class="menu_desc"> Проверить доступность доменного имени. Ведите имя страницы латинскими буквами </span><br>
-                                <a href="#avalible" class="button-1 btn-hover modalbox" data-animation="animated fadeInRight"> Проверка URL-адреса </a> <br>
+                                <a href="#avalible" rel="nofollow" class="button-1 btn-hover modalbox" data-animation="animated fadeInRight"> Проверка URL-адреса </a> <br>
 
                              </div>
                              <div class="menu_item border_bottom  ">
@@ -481,7 +481,7 @@
                                 <span class="menu_title">  выберите домен</span> <br>
                                 <span class="menu_sep"> </span> <br>
                                 <span class="menu_desc"> Проверить доступность доменного имени. Ведите имя страницы латинскими буквами </span><br>
-                                <a href="#avalible" class="button-1 btn-hover modalbox" data-animation="animated fadeInRight"> Проверка URL-адреса </a> <br>
+                                <a href="#avalible" rel="nofollow" class="button-1 btn-hover modalbox" data-animation="animated fadeInRight"> Проверка URL-адреса </a> <br>
 
                              </div>
             			 </div>

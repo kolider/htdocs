@@ -18,14 +18,11 @@ $(document).ready(function () {
         }
     });
 
-    $(".modalbox").fancybox({'closeBtn' : false});
+    $(".modalbox").fancybox({'closeBtn': false});
 
-    $("#commentForm").submit(function(event) { //return false; });
+    $("#commentForm").submit(function (event) {
         event.preventDefault();
 
-    //$("#commentForm").submit(function() { return false; });
-
-    //$(".submit").on("click", function(){
         $(".submit").replaceWith("<div class='form_dscr'><img class='loader' src='image/loader_love.gif' alt='Загрузка' width='40' height='40'></div>");
         var form = document.forms.commentForm;
 
@@ -42,18 +39,18 @@ $(document).ready(function () {
 
         xhr.open("POST", "sendMail/order.php", true);
 
-        xhr.onreadystatechange = function() {
+        xhr.onreadystatechange = function () {
             if (xhr.readyState == 4) {
                 //alert("Status:4");
-                if(xhr.status == 200) {
+                if (xhr.status == 200) {
                     //alert("status:200");
                     var dataJSON = xhr.responseText;
                     var data = JSON.parse(dataJSON);
-                    if(data["error"] === undefined) {
+                    if (data["error"] === undefined) {
 
-                        $("#order").fadeOut("fast", function(){
-                            $(this).before("<span style='text-align: center;'><h4><strong>"+data["success"]+"</strong></h4></span>");
-                            setTimeout(function(){
+                        $("#order").fadeOut("fast", function () {
+                            $(this).before("<span style='text-align: center;'><h4><strong>" + data["success"] + "</strong></h4></span>");
+                            setTimeout(function () {
                                 $.fancybox.close();
                                 document.getElementById('file').value = '';
                                 document.getElementById("tel").value = null;
@@ -69,9 +66,9 @@ $(document).ready(function () {
 
                     } else {
 
-                        $("#order").fadeOut("fast", function(){
-                            $(this).before("<span style='text-align: center;'><h5>Ошибка<br><br>"+data["error"]+"</h5></span>");
-                            setTimeout(function(){
+                        $("#order").fadeOut("fast", function () {
+                            $(this).before("<span style='text-align: center;'><h5>Ошибка<br><br>" + data["error"] + "</h5></span>");
+                            setTimeout(function () {
                                 $.fancybox.close();
                                 window.location.reload(false);
                             }, 10000);
@@ -89,7 +86,7 @@ $(document).ready(function () {
     });
 
 
-    $("#feedbackForm").submit(function(event) { //return false; });
+    $("#feedbackForm").submit(function (event) { //return false; });
         event.preventDefault();
         $("#feedbackSubmit").replaceWith("<div id='beforeButton'><img class='loader' src='image/loader_love.gif' alt='Отправка' width='40' height='40'></div>");
         //$(".feedbackSubmit").on("click", function(){
@@ -100,27 +97,27 @@ $(document).ready(function () {
         formData.append("feedbackContact", document.querySelector("input[name=feedbackContact]").value);
         formData.append("feedbackMessage", document.querySelector("textarea[name=feedbackMessage]").value);
         xhr.open("POST", "sendMail/feedback.php", true);
-        xhr.onreadystatechange = function() {
+        xhr.onreadystatechange = function () {
             if (xhr.readyState == 4) {
-                if(xhr.status == 200) {
+                if (xhr.status == 200) {
                     $.fancybox.close();
-                    if (xhr.responseText == "true"){
-                        $.fancybox.open([{src : '#feedbackMessage'}],{
-                            width:'40%',
-                            height:'10%',
-                            closeBtn : false,
-                            autoSize : false
+                    if (xhr.responseText == "true") {
+                        $.fancybox.open([{src: '#feedbackMessage'}], {
+                            width: '40%',
+                            height: '10%',
+                            closeBtn: false,
+                            autoSize: false
                         });
                         setTimeout("$.fancybox.close()", 3000);
                         document.querySelector("input[name=feedbackName]").value = null;
                         document.querySelector("input[name=feedbackContact]").value = null;
                         document.querySelector("textarea[name=feedbackMessage]").value = null;
-                    }else{
-                        $.fancybox.open([{src : '#feedbackError'}],{
-                            width:'40%',
-                            height:'10%',
-                            closeBtn : false,
-                            autoSize : false
+                    } else {
+                        $.fancybox.open([{src: '#feedbackError'}], {
+                            width: '40%',
+                            height: '10%',
+                            closeBtn: false,
+                            autoSize: false
                         });
                         setTimeout("$.fancybox.close()", 3000);
                     }
@@ -134,27 +131,35 @@ $(document).ready(function () {
 
 });
 function avalible(value) {
-    if(value.value == ""){
-        document.getElementById("status").innerHTML = "Начните вводить текст";
-    }else{
-        var xhr = new XMLHttpRequest();
-        var params = value.name + "=" + encodeURIComponent(value.value);
+    if (value.value == "") {
+        document.getElementById("status").innerHTML = "Введите адрес";
+        value.style.cssText = 'text-align: right;';
+        document.getElementById("status").style.cssText = '';
+    } else {
+        setTimeout(function () {
+            var xhr = new XMLHttpRequest();
+            var params = "domain=" + encodeURIComponent(value.value);
+            xhr.open("GET", '/avalible.php?' + params, true);
 
-        xhr.open("GET", '/avalible.php?' + params, true);
-
-        xhr.onreadystatechange = function(){
-            if (xhr.readyState == 4){
-                if (xhr.status == 200){}
-                var data = xhr.responseText;
-                if (data == "true"){
-                    document.getElementById("status").innerHTML = "Адрес свободный";
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                        var data = xhr.responseText;
+                        if (data == "true") {
+                            document.getElementById("status").innerHTML = "Адрес свободный";
+                            value.style.cssText = 'text-align: right; color: green;';
+                            document.getElementById("status").style.cssText = 'color: green;';
+                        }
+                        if (data == "false") {
+                            document.getElementById("status").innerHTML = "Адрес занят";
+                            value.style.cssText = 'text-align: right; color: red;';
+                            document.getElementById("status").style.cssText = 'color: red;';
+                        }
+                    }
                 }
-                if (data == "false"){
-                    document.getElementById("status").innerHTML = "Адрес занят";
-                }
-            }
-        };
+            };
 
-        xhr.send();
+            xhr.send();
+        }, 200);
     }
 }
