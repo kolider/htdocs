@@ -1,0 +1,2723 @@
+@charset "utf-8";
+/*BASIC STYLES */
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    /*overflow: scroll;*/
+    -webkit-text-size-adjust: none;
+}
+body {
+    background-image: url("../img/fon_short.png");
+    background-repeat: repeat-y repeat-x;
+    background-attachment: scroll;
+    color: #342f27;
+    line-height: 1.7857;
+    letter-spacing: 0.055em;
+    font-family: Karton;
+}
+
+div {
+    outline: none;
+}
+a, a:active, a:focus, button:focus {
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+
+
+
+/* Header */
+
+.love {
+    width: 3.5%;
+    margin-top: -16px;
+}
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    #header {
+        background-image: url("../img/header-background.png");
+        background-size: cover;
+        background-position: center center;
+        height: 780px;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .countdown-text {
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: 400;
+        padding-top: 10px;
+        float: left;
+    }
+    .countdown-show4 .countdown-section {
+        width: 24.5%;
+    }
+    .countdown-section {
+        display: block;
+        float: left;
+        font-size: 75%;
+        text-align: center;
+    }
+    .countdown-amount {
+        font-size: 200%;
+    }
+
+    .sasha-olya-img{
+        color:  #fefefe;
+        font-size: 3.5em;
+        font-weight: 400;
+        text-align: left;
+        transform: matrix(1.0095,-0.0674,0.0666,0.9977,0,0);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+        text-shadow: 0px 3px 0px #c69769;
+        margin-top: 20px;
+    }
+    .day-wedd {
+        font-family: LemonTuesday;
+        color:  #fefefe;
+        font-weight: 400;
+        font-size: 2em;
+        padding-left:30px ;
+        transform: matrix(0.9935,-0.082,0.1139,1.0321,0,0);
+        margin-top: -20px;
+    }
+    .h-head {
+        font-family: LemonTuesday;
+        color: #000000;
+        font-size: 2.5em;
+        margin-top: -140px;
+    }
+    .heading-img {
+        width: 190px;
+        margin-top: 40px;
+    }
+    .margin {
+        margin-top: 60px;
+    }
+    .tree {
+        width: 5%;
+    }
+    .head-poesia {
+        font-family: LemonTuesday;
+        color:  #342f27;
+        font-size: 2.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 56px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        transform: scaleX(1.0003);
+    }
+
+    .bottom-poesia {
+        font-family: LemonTuesday;
+        color:  #342f27;
+        font-size: 2em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 35px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        transform: scaleY(1.0435);
+    }
+    .text-poesia {
+        font-family: Karton;
+        color:  #342f27;
+        font-size: 1em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+    .ysiki {
+        width: 15%;
+    }
+
+    .foto {
+        margin-left: 36px;
+        cursor: pointer;
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.64);
+        border: 4px solid #ffffff;
+        width: 90%;
+    }
+    #carousel {
+        margin-top: 40px;
+    }
+    .fiori {
+        width: 23%;
+        margin-top: 40px;
+    }
+    .h-poesia2 {
+        font-family: LemonTuesday;
+        color:  #2b1a0a;
+        font-size: 3em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 600;
+        line-height: 48px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        margin-top: 40px;
+    }
+    .text-poesia2 {
+        font-family: Karton;
+        color:  #2b1a0a;
+        font-size: 1em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+
+    .heart {
+        width: 14%;
+        margin-top: 10px;
+    }
+    .foot-poesia2 {
+        font-family: LemonTuesday;
+        color:  #2b1a0a;
+        font-size: 2em;
+    }
+    .icon-designe {
+        margin-top: 5px;
+        width: 18%;
+    }
+    .gifts {
+        font-family: LemonTuesday;
+        color:  rgb(33, 31, 31);
+        font-size: 3em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 101px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+    }
+    .hand-paint {
+        width: 26%;
+        margin-bottom: 20px;
+    }
+    .tree1, .tree2 {
+        width: 160%;
+        margin-top: -20px;
+    }
+    .dreams {
+        font-family: LemonTuesday;
+        color:  rgb(33, 31, 31);
+        font-size: 2em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .p-text1 {
+        font-size: 1.3em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        color:  #3d3938;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+    .foot-text {
+        font-family: Karton;
+        color:  #0c0a09;
+        font-size: 1.3em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        transform: scaleY(1.1948);
+        margin-top: 40px;
+    }
+    .foot-text-1 {
+        font-family: Karton;
+        color:  #0c0a09;
+        font-size: 1em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        transform: scaleY(1.1948);
+    }
+    .foto1 {
+        width: 10%;
+    }
+    .margin1 {
+        margin-top: 10px;
+        font-weight: 400;
+    }
+    .button {
+        margin-top: 20px;
+        width: 280px;
+    }
+    .p-down {
+        font-family: LemonTuesday;
+        color:  #443a28;
+        font-weight: 400;
+        transform: scaleX(1.0456);
+        font-size: 2em;
+        margin-top: 600px;
+        margin-right: 80px;
+    }
+    #footer {
+        background-image: url("../img/kollaj.png");
+        background-size: cover;
+        background-position: center;
+        height: 980px;
+        background-repeat: no-repeat;
+    }
+    .back-child-foto {
+        background-image: url("../img/dokaza.png");
+        background-size: contain;
+        height: 600px;
+        background-repeat: no-repeat;
+        margin-top: 25px;
+    }
+    .text1-child {
+        font-family: Karton;
+        color:  #303030;
+        font-size: 0.785em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 600;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .foto-family {
+        width: 120%;
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+    .box-zoom {
+        width: 150px;
+        height: 106px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -128px;
+        opacity: 0;
+        margin-left: 50px;
+    }
+    .box-zoom2 {
+        width: 122px;
+        height: 98px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -120px;
+        opacity: 0;
+        margin-left: 85px;
+    }
+    .zoom {
+        opacity: 0;
+        width: 80%;
+        z-index: 999;
+        margin-left: 20px;
+    }
+    .zoom1 {
+        opacity: 0;
+        width: 100%;
+        z-index: 999;
+        margin-left: 3px;
+        margin-top: 20px;
+    }
+    .zoom2 {
+        opacity: 0;
+        width: 80%;
+        z-index: 999;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .zoom3 {
+        opacity: 0;
+        width: 100%;
+        z-index: 999;
+        margin-top: 40px;
+    }
+    .box-zoom1 {
+        width: 116px;
+        height: 144px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -170px;
+        opacity: 0;
+        margin-left: 52px;
+    }
+    .box-zoom3 {
+        width: 108px;
+        height: 157px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -189px;
+        opacity: 0;
+        margin-left: 93px;
+    }
+    .box-zoom4 {
+        width: 90px;
+        height: 122px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -146px;
+        opacity: 0;
+        margin-left: 80px;
+    }
+    .box-zoom5 {
+        width: 116px;
+        height: 86px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -104px;
+        opacity: 0;
+        margin-left: 63px;
+    }
+    .zoom4 {
+        opacity: 0;
+        width: 110%;
+        z-index: 999;
+        margin-top: 20px;
+    }
+    .zoom5 {
+        opacity: 0;
+        width: 90%;
+        z-index: 999;
+        margin-top: -10px;
+        margin-left: 5px;
+    }
+    .box-zoom:hover, .box-zoom1:hover, .box-zoom2:hover, .box-zoom3:hover, .box-zoom4:hover, .box-zoom5:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0.8;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .zoom:hover, .zoom1:hover, .zoom2:hover, .zoom3:hover, .zoom4:hover, .zoom5:hover{
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    .family1 {
+        width: 90%;
+        text-align: center;
+        margin-left: 38px;
+        padding-top: 30px;
+        font-family: LemonTuesday;
+        color:  #303030;
+        font-weight: 400;
+        font-size: 1.3em;
+        line-height: 28px;
+        transform: matrix(1,0.0059,-0.0059,1.0008,0,0);
+    }
+    .family2-foto {
+        width: 200%;
+        margin-left: 30px;
+        margin-top: 90px;
+    }
+    .family2 {
+        width: 250%;
+        text-align: center;
+        margin-left: 4px;
+        padding-top: 45px;
+        font-family: LemonTuesday;
+        color:  #303030;
+        font-weight: 400;
+        font-size: 1.3em;
+        line-height: 28px;
+        transform: matrix(1,0.0059,-0.0059,1.0008,0,0);
+    }
+    .she {
+        width: 90%;
+        margin-top: 50px;
+        margin-left: 60px;
+        cursor: pointer;
+    }
+    .sisters {
+        width: 80%;
+        margin-left: 70px;
+    }
+    .he {
+        width: 160%;
+        margin-top: 4px;
+        margin-left: 60px;
+    }
+    .them {
+        width: 200%;
+        margin-left: 40px;
+        margin-top: 60px;
+    }
+    .olya {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.3em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        margin-left: 110px;
+        margin-top: 25px;
+    }
+    .olya-and-sister {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.3em;
+        font-weight: 400;
+        text-align: center;
+        width: 140%;
+        line-height: 20px;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    .sasha {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.3em;
+        font-weight: 400;
+        text-align: center;
+        margin-left: 100px;
+        margin-top: 40px;
+    }
+    .sasha-sister {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.3em;
+        font-weight: 400;
+        text-align: center;
+        width: 200%;
+        line-height: 20px;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #header {
+        background-image: url("../img/header-background.png");
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        height: 640px;
+        background-repeat: no-repeat;
+    }
+    .countdown-text {
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: 400;
+        padding-top: 10px;
+        float: left;
+    }
+    .countdown {
+        width: 400px;
+        height: auto;
+        margin-left: 15px;
+    }
+    .countdown-amount{
+        font-size: 160%;
+    }
+    .countdown-section {
+        display: block;
+        float: left;
+        font-size: 95%;
+        text-align: center;
+    }
+    .countdown-period {
+        font-size: 0.785em;
+    }
+    .countdown-show4 .countdown-section {
+        width: 15%;
+    }
+
+    .sasha-olya-img{
+        color:  #fefefe;
+        font-size: 3em;
+        font-weight: 400;
+        transform: matrix(1.0095,-0.0674,0.0666,0.9977,0,0);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+        text-shadow: 0 3px 0 #c69769;
+        margin-top: 380px;
+        text-align: center;
+    }
+    .day-wedd {
+        font-family: LemonTuesday;
+        color:  #fefefe;
+        font-weight: 400;
+        font-size: 1.7em;
+        padding-left:30px ;
+        transform: matrix(0.9935,-0.082,0.1139,1.0321,0,0);
+        margin-top: -14px;
+        text-align: center;
+    }
+    .h-head {
+        font-family: LemonTuesday;
+        color: #000000;
+        font-size: 1.8em;
+        margin-top: -110px;
+    }
+    .heading-img {
+        width: 160px;
+        margin-top: 40px;
+    }
+    .margin {
+        margin-top: 60px;
+    }
+    .tree {
+        width: 8%;
+    }
+    .head-poesia {
+        font-family: LemonTuesday;
+        color:  #342f27;
+        font-size: 2.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 56px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        transform: scaleX(1.0003);
+    }
+
+    .bottom-poesia {
+        font-family: LemonTuesday;
+        color:  #342f27;
+        font-size: 1.8em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 35px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        transform: scaleY(1.0435);
+    }
+    .text-poesia {
+        font-family: Karton;
+        color:  #342f27;
+        font-size: 1em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+    .ysiki {
+        width: 20%;
+    }
+
+    .foto {
+        margin-left: 36px;
+        cursor: pointer;
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.64);
+        border: 4px solid #ffffff;
+        width: 90%;
+    }
+
+
+    #carousel {
+        margin-top: 40px;
+    }
+    .fiori {
+        width: 23%;
+        margin-top: 40px;
+    }
+    .h-poesia2 {
+        font-family: LemonTuesday;
+        color:  #2b1a0a;
+        font-size: 3em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 600;
+        line-height: 48px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        margin-top: 40px;
+    }
+    .text-poesia2 {
+        font-family: Karton;
+        color:  #2b1a0a;
+        font-size: 1em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+
+    .heart {
+        width: 14%;
+        margin-top: 10px;
+    }
+    .foot-poesia2 {
+        font-family: LemonTuesday;
+        color:  #2b1a0a;
+        font-size: 2em;
+    }
+    .icon-designe {
+        margin-top: 65px;
+        width: 18%;
+    }
+    .gifts {
+        font-family: LemonTuesday;
+        color:  rgb(33, 31, 31);
+        font-size: 4em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 101px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+    }
+    .hand-paint {
+        width: 30%;
+    }
+    .tree1, .tree2 {
+        width: 160%;
+        margin-top: -20px;
+    }
+    .dreams {
+        font-family: LemonTuesday;
+        color:  rgb(33, 31, 31);
+        font-size: 2.2em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .p-text1 {
+        font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        color:  #3d3938;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+    .foot-text {
+        font-family: Karton;
+        color:  #0c0a09;
+        font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        transform: scaleY(1.1948);
+        margin-top: 40px;
+    }
+    .foot-text-1 {
+        font-family: Karton;
+        color:  #0c0a09;
+        font-size: 1em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        transform: scaleY(1.1948);
+    }
+    .foto1 {
+        width: 10%;
+    }
+    .margin1 {
+        margin-top: 10px;
+        font-weight: 400;
+    }
+    .button {
+        margin-top: 20px;
+        width: 280px;
+    }
+    .p-down {
+        font-family: LemonTuesday;
+        color:  #443a28;
+        font-weight: 400;
+        transform: scaleX(1.0456);
+        font-size: 2em;
+        margin-top: 600px;
+        margin-right: 80px;
+    }
+    #footer {
+        background-image: url("../img/kollaj.png");
+        background-size: cover;
+        background-position: center;
+        height: 980px;
+        background-repeat: no-repeat;
+    }
+    .back-child-foto {
+        background-image: url("../img/dokaza.png");
+        background-size: contain;
+        height: 380px;
+        background-repeat: no-repeat;
+        margin-top: 25px;
+    }
+    .gifts {
+        font-size: 2.5em;
+    }
+    .text1-child {
+        font-family: Karton;
+        color:  #303030;
+        font-size: 0.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 600;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .foto-family {
+        width: 120%;
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+    .box-zoom {
+        width: 104px;
+        height: 74px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -90px;
+        opacity: 0;
+        margin-left: 40px;
+    }
+    .box-zoom2 {
+        width: 96px;
+        height: 80px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -96px;
+        opacity: 0;
+        margin-left: 50px;
+    }
+    .zoom {
+        opacity: 0;
+        width: 80%;
+        z-index: 999;
+        margin-left: 20px;
+    }
+    .zoom1 {
+        opacity: 0;
+        width: 100%;
+        z-index: 999;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .zoom2 {
+        opacity: 0;
+        width: 80%;
+        z-index: 999;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .zoom3 {
+        opacity: 0;
+        width: 100%;
+        z-index: 999;
+        margin-top: 20px;
+    }
+    .box-zoom1 {
+        width: 83px;
+        height: 102px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -122px;
+        opacity: 0;
+        margin-left: 37px;
+    }
+    .box-zoom3 {
+        width: 76px;
+        height: 112px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -135px;
+        opacity: 0;
+        margin-left: 58px;
+    }
+    .box-zoom4 {
+        width: 72px;
+        height: 100px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -122px;
+        opacity: 0;
+        margin-left: 58px;
+    }
+    .box-zoom5 {
+        width: 113px;
+        height: 86px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -103px;
+        opacity: 0;
+        margin-left: 33px;
+    }
+    .zoom4 {
+        opacity: 0;
+        width: 110%;
+        z-index: 999;
+        margin-top: 20px;
+    }
+    .zoom5 {
+        opacity: 0;
+        width: 90%;
+        z-index: 999;
+        margin-top: -10px;
+        margin-left: 5px;
+    }
+    .box-zoom:hover, .box-zoom1:hover, .box-zoom2:hover, .box-zoom3:hover, .box-zoom4:hover, .box-zoom5:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0.8;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .zoom:hover, .zoom1:hover, .zoom2:hover, .zoom3:hover, .zoom4:hover, .zoom5:hover{
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    .family1 {
+        width: 90%;
+        text-align: center;
+        margin-left: 28px;
+        padding-top: 30px;
+        font-family: LemonTuesday;
+        color:  #303030;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 20px;
+        transform: matrix(1,0.0059,-0.0059,1.0008,0,0);
+    }
+    .family2-foto {
+        width: 220%;
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+    .family2 {
+        width: 270%;
+        text-align: center;
+        margin-left: 4px;
+        padding-top: 25px;
+        font-family: LemonTuesday;
+        color:  #303030;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 28px;
+        transform: matrix(1,0.0059,-0.0059,1.0008,0,0);
+    }
+    .she {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .sisters {
+        width: 80%;
+        margin-left: 40px;
+    }
+    .he {
+        width: 200%;
+        margin-top: 0px;
+        margin-left: 40px;
+    }
+    .them {
+        width: 300%;
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+    .olya {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.2em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        margin-left: 80px;
+        margin-top: 25px;
+    }
+    .olya-and-sister {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.2em;
+        font-weight: 400;
+        text-align: center;
+        width: 140%;
+        line-height: 20px;
+        margin-top: 30px;
+    }
+    .sasha {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.2em;
+        font-weight: 400;
+        text-align: center;
+        margin-left: 74px;
+        margin-top: 10px;
+    }
+    .sasha-sister {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.2em;
+        font-weight: 400;
+        text-align: center;
+        width: 200%;
+        line-height: 20px;
+        margin-left: 40px;
+        margin-top: 25px;
+    }
+    .hand-paint {
+        width: 30%;
+        margin-bottom: 40px;
+    }
+    .tree1, .tree2 {
+        width:200%;
+        margin-top: -20px;
+    }
+    .dreams {
+        font-family: LemonTuesday;
+        color:  rgb(33, 31, 31);
+        font-size: 1.8em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .p-text1 {
+        font-size: 1.2em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        color:  #3d3938;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+    .foot-text {
+        font-family: Karton;
+        color:  #0c0a09;
+        font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        transform: scaleY(1.1948);
+        margin-top: 40px;
+    }
+    .foot-text-1 {
+        font-family: Karton;
+        color:  #0c0a09;
+        font-size: 1em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        transform: scaleY(1.1948);
+    }
+    .foto1 {
+        width: 10%;
+    }
+    .margin1 {
+        margin-top: 10px;
+        font-weight: 400;
+    }
+    .button {
+        margin-top: 20px;
+        width: 280px;
+    }
+    .p-down {
+        font-family: LemonTuesday;
+        color:  #443a28;
+        font-weight: 400;
+        transform: scaleX(1.0456);
+        font-size: 2em;
+        margin-top: 600px;
+        margin-right: 80px;
+    }
+    #footer {
+        background-image: url("../img/kollaj.png");
+        background-size: cover;
+        background-position: center;
+        height: 980px;
+        background-repeat: no-repeat;
+    }
+    .map {
+        width: 14%;
+        margin-left: 560px;
+        margin-top: -80px;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    .map:hover {
+        width: 15%;
+    }
+    .credolove {
+        font-family: LemonTuesday;
+        color:  #57523c;
+        font-size: 34px;
+        text-transform: lowercase;
+    }
+    .credolove:hover, .credolove:active, .credolove:focus {
+        color:  #57523c;
+        text-decoration: underline;
+    }
+    .p-down {
+        display: none;
+    }
+    .fot-left, .fot-right {
+        width: 8%;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    #header {
+        background-image: url("../img/header-background.png");
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        height: 500px;
+        background-repeat: no-repeat;
+    }
+    .countdown-text {
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: 400;
+        padding-top: 10px;
+        float: left;
+        padding-left: 20px;
+    }
+    .countdown {
+        width: 400px;
+        height: auto;
+        margin-left: 15px;
+    }
+    .countdown-amount{
+        font-size: 160%;
+    }
+    .countdown-section {
+        display: block;
+        float: left;
+        font-size: 95%;
+        text-align: center;
+    }
+    .countdown-period {
+        font-size: 0.785em;
+    }
+    .countdown-show4 .countdown-section {
+        width: 15%;
+    }
+
+    .sasha-olya-img{
+        color:  #fefefe;
+        font-size: 3em;
+        font-weight: 400;
+        transform: matrix(1.0095,-0.0674,0.0666,0.9977,0,0);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+        text-shadow: 0 3px 0 #c69769;
+        margin-top: 260px;
+        text-align: center;
+    }
+    .day-wedd {
+        font-family: LemonTuesday;
+        color:  #fefefe;
+        font-weight: 400;
+        font-size: 1.7em;
+        padding-left:30px ;
+        transform: matrix(0.9935,-0.082,0.1139,1.0321,0,0);
+        margin-top: -14px;
+        text-align: center;
+    }
+    .h-head {
+        font-family: LemonTuesday;
+        color: #000000;
+        font-size: 1.7em;
+        margin-top: -100px;
+    }
+    .heading-img {
+        width: 140px;
+        margin-top: 40px;
+    }
+    .margin {
+        margin-top: 30px;
+    }
+    .tree {
+        width: 60px;
+    }
+    .head-poesia {
+        font-family: LemonTuesday;
+        color:  #342f27;
+        font-size: 1.8em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 56px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        transform: scaleX(1.0003);
+    }
+
+    .bottom-poesia {
+        font-family: LemonTuesday;
+        color:  #342f27;
+        font-size: 1.95em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 30px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        transform: scaleY(1.0435);
+    }
+    .text-poesia {
+        font-family: Karton;
+        color:  #342f27;
+        font-size: 0.875em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+    .ysiki {
+        width: 25%;
+    }
+    .foto {
+        cursor: pointer;
+        box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.64);
+        border: 4px solid #ffffff;
+        width: 100%;
+        margin-left: 0px;
+    }
+    #carousel {
+        margin-top: 40px;
+    }
+    .fiori {
+        width: 33%;
+        margin-top: 40px;
+    }
+    .h-poesia2 {
+        font-family: LemonTuesday;
+        color:  #2b1a0a;
+        font-size: 2.2em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 600;
+        line-height: 48px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        margin-top: 20px;
+    }
+    .text-poesia2 {
+        font-family: Karton;
+        color:  #2b1a0a;
+        font-size: 0.875em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+
+    .heart {
+        width: 24%;
+        margin-top: 10px;
+    }
+    .foot-poesia2 {
+        font-family: LemonTuesday;
+        color:  #2b1a0a;
+        font-size: 1.5em;
+    }
+    #child-for-phones {
+        background-image: url("../img/levo.png");
+        background-size: cover;
+        height:620px;
+        background-repeat: no-repeat;
+        margin-top: 15px;
+        background-position: center center;
+    }
+    .text1-child {
+        width: 100%;
+        margin-top: 90px;
+        text-align: center;
+        font-size: 1.5em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .foto-family{
+        width: 100%;
+        margin-top: 100px;
+        text-align: center;
+        padding-left:100px;
+        padding-right: 100px;
+    }
+    .family2-foto{
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 0;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .family1 {
+        margin-left: 0px;
+        width: 100%;
+        font-size: 1.3em;
+    }
+    .arrow-1 {
+        width: 10%;
+        margin-top: 26%;
+    }
+    .arrow-2 {
+        width: 6%;
+        margin-left: 10px;
+    }
+    .arrow-3 {
+        width: 6%;
+        margin-top: -32px;
+        margin-left: 10px;
+    }
+    .family2 {
+        margin-top: -30px;
+        width: 100%;
+        margin-left: 0px;
+        font-size: 1.3em;
+    }
+    .she1 {
+        width: 100%;
+        height: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 80px;
+    }
+    .olya1 {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .sisters {
+        width: 100%;
+        margin-top: 30px;
+        padding-left: 135px;
+        padding-right: 135px;
+        text-align: center;
+        margin-left: 0px;
+
+    }
+    .olya-and-sister {
+        margin-left: 0px;
+        width:100%;
+        margin-top: 10px;
+        font-size: 1.3em;
+    }
+    .he {
+        width: 100%;
+        margin-top: 30px;
+        padding-left: 120px;
+        padding-right: 120px;
+        margin-left: 0px;
+    }
+    .sasha{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 6px;
+        font-size: 1.3em;
+    }
+    .them1 {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 120px;
+    }
+    .sasha-sister {
+        width: 100%;
+        margin-left: 0px;
+        font-size: 1.3em;
+    }
+    .icon-designe {
+        margin-top: 35px;
+        width: 30%;
+    }
+    .gifts {
+        font-family: LemonTuesday;
+        color:  rgb(33, 31, 31);
+        font-size: 2.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 101px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+    }
+    .hand-paint {
+        width: 30%;
+    }
+    .tree1, .tree2 {
+        width: 8%;
+        margin-top: -10px;
+    }
+    .dreams {
+        font-family: LemonTuesday;
+        color:  rgb(33, 31, 31);
+        font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .p-text1 {
+        font-size: 0.885em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        color:  #3d3938;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .foot-text-1 {
+        font-size: 0.875em;
+    }
+    .foot-text {
+        font-size: 0.875em;
+        font-weight: 600;
+    }
+    .button {
+        margin-top: 10px;
+        width: 280px;
+    }
+    .p-down {
+        margin-top: 330px;
+        font-size: 1.5em;
+    }
+    .olya-foot {
+        width: 100%;
+    }
+    .map {
+        width: 20%;
+        margin-left: 0px;
+        margin-top: 5px;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    .map:hover {
+        width: 15%;
+    }
+    .adress {
+        margin-top: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .credolove {
+        font-family: LemonTuesday;
+        color:  #57523c;
+        font-size: 34px;
+        text-transform: lowercase;
+    }
+    .credolove:hover, .credolove:active, .credolove:focus {
+        color:  #57523c;
+        text-decoration: underline;
+    }
+    .p-down {
+        display: none;
+    }
+    .fot-left, .fot-right {
+        width: 10%;
+    }
+    #footer {
+        background-image: url("../img/foot-ka=oladg.png");
+        background-size: cover;
+        background-position: center;
+        height: 900px;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (max-width : 636px) {
+    #child-for-phones {
+        background-image: url("../img/levo.png");
+        background-size: cover;
+        height:100%;
+        background-repeat: no-repeat;
+        margin-top: 15px;
+        background-position: center center;
+    }
+    #footer {
+        background-image: url("../img/foot-ka=oladg.png");
+        background-size: cover;
+        background-position: center;
+        height: 800px;
+        background-repeat: no-repeat;
+    }
+    .text1-child {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 1em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .foto-family{
+        width: 100%;
+        margin-top:80px;
+        text-align: center;
+        padding-left:60px;
+        padding-right: 60px;
+    }
+    .family2-foto{
+        width: 100%;
+        margin-top: 46px;
+        text-align: center;
+        margin-left: 0;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .family1 {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .arrow-1 {
+        width: 8%;
+        margin-top: 26%;
+    }
+    .arrow-2 {
+        width: 6%;
+    }
+    .arrow-3 {
+        width: 6%;
+        margin-top: -32px;
+    }
+    .family2 {
+        margin-top: -30px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .she1 {
+        width: 100%;
+        height: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 100px;
+    }
+    .olya1 {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .sisters {
+        width: 100%;
+        margin-top: 30px;
+        padding-left: 110px;
+        padding-right: 110px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .olya-and-sister {
+        margin-left: 0px;
+        width:100%;
+        margin-top: 10px;
+    }
+    .he {
+        width: 100%;
+        margin-top: 30px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: 0px;
+    }
+    .sasha{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 6px;
+    }
+    .them1 {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 60px;
+    }
+    .sasha-sister {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+}
+@media only screen and (max-width : 480px) {
+    #header {
+        background-image: url("../img/header-background.png");
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        height: 320px;
+        background-repeat: no-repeat;
+    }
+    .countdown-text {
+        color: #ffffff;
+        font-size: 0.875em;
+        font-weight: 400;
+        padding-top: 10px;
+        float: left;
+        padding-left: 20px;
+    }
+    .countdown {
+        width: 300px;
+        height: auto;
+        margin-left: 30px;
+    }
+    .countdown-amount{
+        font-size: 100%;
+    }
+    .countdown-section {
+        display: block;
+        float: left;
+        font-size: 95%;
+        text-align: center;
+    }
+    .countdown-period {
+        font-size: 0.6em;
+    }
+    .countdown-show4 .countdown-section {
+        width: 15%;
+    }
+
+    .sasha-olya-img{
+        color:  #fefefe;
+        font-size: 2em;
+        font-weight: 400;
+        transform: matrix(1.0095,-0.0674,0.0666,0.9977,0,0);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+        text-shadow: 0 3px 0 #c69769;
+        margin-top: 140px;
+        text-align: center;
+    }
+    .day-wedd {
+        font-family: LemonTuesday;
+        color:  #fefefe;
+        font-weight: 400;
+        font-size: 1.3em;
+        padding-left:30px ;
+        transform: matrix(0.9935,-0.082,0.1139,1.0321,0,0);
+        margin-top: -10px;
+        text-align: center;
+    }
+    .h-head {
+        font-family: LemonTuesday;
+        color: #000000;
+        font-size: 1.4em;
+        margin-top: -85px;
+    }
+    .heading-img {
+        width: 120px;
+        margin-top: 40px;
+    }
+    .margin {
+        margin-top: 30px;
+    }
+    .tree {
+        width: 40px;
+    }
+    .head-poesia {
+        font-family: LemonTuesday;
+        color:  #342f27;
+        font-size: 1.4em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 56px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        transform: scaleX(1.0003);
+    }
+
+    .bottom-poesia {
+        font-family: LemonTuesday;
+        color:  #342f27;
+        font-size: 1.95em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 20px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        transform: scaleY(1.0435);
+    }
+    .text-poesia {
+        font-family: Karton;
+        color:  #342f27;
+        font-size: 0.7em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+    .ysiki {
+        width: 35%;
+    }
+    .foto {
+        cursor: pointer;
+        box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.64);
+        border: 4px solid #ffffff;
+        width: 100%;
+    }
+    #carousel {
+        margin-top: 40px;
+    }
+    .fiori {
+        width: 43%;
+        margin-top: 40px;
+    }
+    .h-poesia2 {
+        font-family: LemonTuesday;
+        color:  #2b1a0a;
+        font-size: 2em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 600;
+        line-height: 48px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        margin-top: 20px;
+    }
+    .text-poesia2 {
+        font-family: Karton;
+        color:  #2b1a0a;
+        font-size: 0.785em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+
+    .heart {
+        width: 34%;
+        margin-top: 10px;
+    }
+    .foot-poesia2 {
+        font-family: LemonTuesday;
+        color:  #2b1a0a;
+        font-size: 1.3em;
+    }
+    #child-for-phones {
+        background-image: url("../img/levo.png");
+        background-size: cover;
+        height:100%;
+        background-repeat: no-repeat;
+        margin-top: 15px;
+        background-position: center center;
+    }
+    .text1-child {
+        width: 100%;
+        margin-top: 60px;
+        text-align: center;
+        font-size: 1em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .foto-family{
+        width: 100%;
+        margin-top: 80px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .family2-foto{
+        width: 100%;
+        margin-top: 60px;
+        text-align: center;
+        margin-left: 0;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .family1 {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .arrow-1 {
+        width: 10%;
+        margin-top: 26%;
+    }
+    .arrow-2 {
+        width: 8%;
+    }
+    .arrow-3 {
+        width: 8%;
+        margin-top: -32px;
+    }
+    .family2 {
+        margin-top: -10px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .she1 {
+        width: 100%;
+        height: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 110px;
+    }
+    .olya1 {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .sisters {
+        width: 100%;
+        margin-top: 60px;
+        padding-left: 85px;
+        padding-right: 85px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .olya-and-sister {
+        margin-left: 0px;
+        width:100%;
+        margin-top: 10px;
+    }
+    .he {
+        width: 100%;
+        margin-top: 70px;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-left: 0px;
+    }
+    .sasha{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 6px;
+    }
+    .them1 {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 110px;
+    }
+    .sasha-sister {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .icon-designe {
+        margin-top: 65px;
+        width: 38%;
+    }
+    .gifts {
+        font-family: LemonTuesday;
+        color:  rgb(33, 31, 31);
+        font-size: 2em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 101px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+    }
+    .hand-paint {
+        width: 60%;
+    }
+    .tree1, .tree2 {
+        width: 15%;
+        margin-top: -10px;
+    }
+    .dreams {
+        font-family: LemonTuesday;
+        color:  rgb(33, 31, 31);
+        font-size: 1.2em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .p-text1 {
+        font-size: 0.785em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        color:  #3d3938;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    #footer {
+        background-image: url("../img/foot-ka=oladg.png");
+        background-size: cover;
+        background-position: center;
+        height: 700px;
+        background-repeat: no-repeat;
+    }
+    .foot-text, .foot-text-1 {
+        font-size: 0.75em;
+    }
+    .p-down {
+        display: none;
+    }
+    .olya-foot {
+        width: 100%;
+    }
+    .map {
+        width: 25%;
+        margin-left: 0px;
+        margin-top: 5px;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    .map:hover {
+        width: 15%;
+    }
+    .adress {
+        margin-top: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .credolove {
+        font-family: LemonTuesday;
+        color:  #57523c;
+        font-size: 34px;
+        text-transform: lowercase;
+    }
+    .credolove:hover, .credolove:active, .credolove:focus {
+        color:  #57523c;
+        text-decoration: underline;
+    }
+    .fot-left, .fot-right {
+        width: 10%;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 400px) {
+
+    #child-for-phones {
+        background-image: url("../img/levo.png");
+        background-size: cover;
+        height:100%;
+        background-repeat: no-repeat;
+        margin-top: 15px;
+        background-position: center center;
+    }
+    .text1-child {
+        width: 100%;
+        margin-top: 60px;
+        text-align: center;
+        font-size: 1em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .foto-family{
+        width: 100%;
+        margin-top: 80px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .family2-foto{
+        width: 100%;
+        margin-top: 60px;
+        text-align: center;
+        margin-left: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .family1 {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .arrow-1 {
+        width: 10%;
+        margin-top: 26%;
+    }
+    .arrow-2 {
+        width: 8%;
+    }
+    .arrow-3 {
+        width: 8%;
+        margin-top: -32px;
+    }
+    .family2 {
+        margin-top: -20px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .she1 {
+        width: 100%;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 110px;
+    }
+    .olya1 {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .sisters {
+        width: 100%;
+        margin-top: 50px;
+        padding-left: 45px;
+        padding-right: 45px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .olya-and-sister {
+        margin-left: 0px;
+        width:100%;
+        margin-top: 10px;
+    }
+    .he {
+        width: 100%;
+        margin-top: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 0px;
+    }
+    .sasha{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 6px;
+    }
+    .them1 {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 110px;
+    }
+    .sasha-sister {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    #header {
+        background-image: url("../img/header-background.png");
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        height: 220px;
+        background-repeat: no-repeat;
+    }
+    .countdown-text {
+        color: #ffffff;
+        font-size: 0.65em;
+        font-weight: 400;
+        padding-top: 10px;
+        float: left;
+    }
+    .countdown {
+        width: 300px;
+        height: auto;
+        margin-top: -8px;
+        margin-left: 9px;
+    }
+    .countdown-amount{
+        font-size: 100%;
+    }
+    .countdown-section {
+        display: block;
+        float: left;
+        font-size: 95%;
+        text-align: center;
+    }
+    .countdown-period {
+        font-size: 0.6em;
+    }
+    .countdown-show4 .countdown-section {
+        width: 15%;
+    }
+
+    .sasha-olya-img{
+        color:  #fefefe;
+        font-size: 1.5em;
+        font-weight: 400;
+        transform: matrix(1.0095,-0.0674,0.0666,0.9977,0,0);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+        text-shadow: 0 3px 0 #c69769;
+        margin-top: 70px;
+        text-align: center;
+    }
+    .day-wedd {
+        font-family: LemonTuesday;
+        color:  #fefefe;
+        font-weight: 400;
+        font-size: 1em;
+        padding-left:30px ;
+        transform: matrix(0.9935,-0.082,0.1139,1.0321,0,0);
+        margin-top: -10px;
+        text-align: center;
+    }
+    .h-head {
+        font-family: LemonTuesday;
+        color: #000000;
+        font-size: 1.2em;
+        margin-top: -75px;
+    }
+
+    .heading-img {
+        width:100px;
+        margin-top: 25px;
+    }
+    .margin {
+        margin-top: 30px;
+    }
+    .tree {
+        width: 28px;
+    }
+    .head-poesia {
+        font-family: LemonTuesday;
+        color:  #342f27;
+        font-size: 1.3em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 56px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        transform: scaleX(1.0003);
+    }
+
+    .bottom-poesia {
+        font-family: LemonTuesday;
+        color:  #342f27;
+        font-size: 1.7em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 20px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        transform: scaleY(1.0435);
+    }
+    .text-poesia {
+        font-family: Karton;
+        color:  #342f27;
+        font-size: 0.785em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.08em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .ysiki {
+        width: 35%;
+    }
+    .foto {
+        cursor: pointer;
+        box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.64);
+        border: 4px solid #ffffff;
+        width: 320px;
+    }
+    #carousel {
+        margin-top: 40px;
+    }
+    .fiori {
+        width: 43%;
+        margin-top: 40px;
+    }
+    .h-poesia2 {
+        font-family: LemonTuesday;
+        color:  #2b1a0a;
+        font-size: 2em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 600;
+        line-height: 48px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        margin-top: 20px;
+    }
+    .text-poesia2 {
+        font-family: Karton;
+        color:  #2b1a0a;
+        font-size: 0.785em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+
+    .heart {
+        width: 34%;
+        margin-top: 10px;
+    }
+    .foot-poesia2 {
+        font-family: LemonTuesday;
+        color:  #2b1a0a;
+        font-size: 1.3em;
+    }
+    #child-for-phones {
+        background-image: url("../img/levo.png");
+        background-size: contain;
+        height: 300px;
+        background-repeat: no-repeat;
+        margin-top: 25px;
+    }
+    .text1-child {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 0.785em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .foto-family{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .family2-foto{
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        padding-left: 80px;
+        padding-right: 80px;
+
+        margin-left: 0;
+    }
+    .family1 {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .arrow-1 {
+        width: 10%;
+        margin-top: 26%;
+    }
+    .arrow-2 {
+        width: 8%;
+        margin-left: 8px;
+    }
+    .arrow-3 {
+        width: 8%;
+        margin-top: -32px;
+        margin-left: 8px;
+    }
+    .family2 {
+        margin-top: -30px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .she1 {
+        width: 100%;
+        height: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 20px;
+    }
+    .olya1 {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .sisters {
+        width: 100%;
+        margin-top: 20px;
+        padding-left: 85px;
+        padding-right: 85px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .olya-and-sister {
+        margin-left: 0px;
+        width:100%;
+        margin-top: 10px;
+    }
+    .he {
+        width: 100%;
+        margin-top: 30px;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-left: 0px;
+    }
+    .sasha{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 6px;
+    }
+    .them1 {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 40px;
+    }
+    .sasha-sister {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .icon-designe {
+        margin-top: 65px;
+        width: 38%;
+    }
+    .gifts {
+        font-family: LemonTuesday;
+        color:  rgb(33, 31, 31);
+        font-size: 2em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 101px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+    }
+    .hand-paint {
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    .tree1, .tree2 {
+        width: 20%;
+        margin-top: -10px;
+    }
+    .dreams {
+        font-family: LemonTuesday;
+        color:  rgb(33, 31, 31);
+        font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+    }
+    #footer {
+        background-image: url("../img/foot-ka=oladg.png");
+        background-size: cover;
+        background-position: center;
+        height: 640px;
+        background-repeat: no-repeat;
+    }
+    .foot-text, .foot-text-1 {
+        font-size: 0.75em;
+    }
+    .p-down {
+        display: none;
+    }
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .olya-foot {
+        display: none;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .map {
+        width: 10%;
+        margin-left: 560px;
+        margin-top: -80px;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    .map:hover {
+        width: 15%;
+    }
+    .adress {
+        margin-top: -10px;
+    }
+    .credolove {
+        font-family: LemonTuesday;
+        color:  #57523c;
+        font-size: 34px;
+        text-transform: lowercase;
+    }
+    .credolove:hover, .credolove:active, .credolove:focus {
+        color:  #57523c;
+        text-decoration: underline;
+    }
+    .fot-left, .fot-right {
+        width: 5%;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    #header {
+        background-image: url("../img/header-background.png");
+        background-size: cover;
+        background-position: center center;
+        height: 940px;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .countdown-text {
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: 400;
+        padding-top: 10px;
+        float: left;
+    }
+    .olya-foot {
+        padding-top: 40px;
+    }
+    .countdown-show4 .countdown-section {
+        width: 24.5%;
+    }
+    .countdown-section {
+        display: block;
+        float: left;
+        font-size: 75%;
+        text-align: center;
+    }
+    .countdown-amount {
+        font-size: 200%;
+    }
+
+    .sasha-olya-img{
+        color:  #fefefe;
+        font-size: 3.5em;
+        font-weight: 400;
+        text-align: left;
+        transform: matrix(1.0095,-0.0674,0.0666,0.9977,0,0);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+        text-shadow: 0px 3px 0px #c69769;
+        margin-top: 20px;
+    }
+    .day-wedd {
+        font-family: LemonTuesday;
+        color:  #fefefe;
+        font-weight: 400;
+        font-size: 2em;
+        padding-left:30px ;
+        transform: matrix(0.9935,-0.082,0.1139,1.0321,0,0);
+        margin-top: -20px;
+    }
+    .h-head {
+        font-family: LemonTuesday;
+        color: #000000;
+        font-size: 2.5em;
+        margin-top: -150px;
+    }
+    .heading-img {
+        width: 18%;
+        margin-top: 40px;
+    }
+    .margin {
+        margin-top: 60px;
+    }
+    .tree {
+        width: 5%;
+    }
+    .head-poesia {
+        font-family: LemonTuesday;
+        color:  #342f27;
+        font-size: 2.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 56px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        transform: scaleX(1.0003);
+    }
+
+    .bottom-poesia {
+        font-family: LemonTuesday;
+        color:  #342f27;
+        font-size: 2em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 35px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        transform: scaleY(1.0435);
+    }
+    .text-poesia {
+        font-family: Karton;
+        color:  #342f27;
+        font-size: 1em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+    .ysiki {
+        width: 15%;
+    }
+
+    .foto {
+        margin-left: 46px;
+        cursor: pointer;
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.64);
+        border: 4px solid #ffffff;
+        width: 90%;
+    }
+    #carousel {
+        margin-top: 40px;
+    }
+    .fiori {
+        width: 23%;
+        margin-top: 40px;
+    }
+    .h-poesia2 {
+        font-family: LemonTuesday;
+        color:  #2b1a0a;
+        font-size: 3em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 600;
+        line-height: 48px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        margin-top: 40px;
+    }
+    .text-poesia2 {
+        font-family: Karton;
+        color:  #2b1a0a;
+        font-size: 1em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.08em;
+    }
+
+    .heart {
+        width: 14%;
+        margin-top: 10px;
+    }
+    .foot-poesia2 {
+        font-family: LemonTuesday;
+        color:  #2b1a0a;
+        font-size: 2em;
+    }
+    .icon-designe {
+        margin-top: 65px;
+        width: 18%;
+    }
+    .gifts {
+        font-family: LemonTuesday;
+        color:  rgb(33, 31, 31);
+        font-size: 4em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 101px;/* Приближение из-за подстановки шрифтов */
+        text-align: center;
+    }
+    .hand-paint {
+        width: 26%;
+        margin-bottom: 30px;
+    }
+    .tree1, .tree2 {
+        width: 160%;
+        margin-top: -20px;
+    }
+    .dreams {
+        font-family: LemonTuesday;
+        color:  rgb(33, 31, 31);
+        font-size: 2.2em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .p-text1 {
+        font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        color:  #3d3938;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+    .foot-text {
+        font-family: Karton;
+        color:  #0c0a09;
+        font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        transform: scaleY(1.1948);
+        margin-top: 40px;
+    }
+    .foot-text-1 {
+        font-family: Karton;
+        color:  #0c0a09;
+        font-size: 1em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        transform: scaleY(1.1948);
+    }
+    .foto1 {
+        width: 10%;
+    }
+    .margin1 {
+        margin-top: 10px;
+        font-weight: 400;
+    }
+    .button {
+        margin-top: 0px;
+        width: 280px;
+        height: 40px;
+    }
+    .p-down {
+        font-family: LemonTuesday;
+        color:  #443a28;
+        font-weight: 400;
+        transform: scaleX(1.0456);
+        font-size: 2em;
+        margin-top: 600px;
+        margin-right: 80px;
+    }
+    #footer {
+        background-image: url("../img/kollaj.png");
+        background-size: cover;
+        background-position: center;
+        height: 980px;
+        background-repeat: no-repeat;
+    }
+    .back-child-foto {
+        background-image: url("../img/dokaza.png");
+        background-size: contain;
+        height: 600px;
+        background-repeat: no-repeat;
+        margin-top: 25px;
+    }
+    .text1-child {
+        font-family: Karton;
+        color:  #303030;
+        font-size: 0.9em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 600;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .foto-family {
+        width: 120%;
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+    .box-zoom {
+        width: 194px;
+        height: 134px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -164px;
+        opacity: 0;
+        margin-left: 60px;
+    }
+    .box-zoom2 {
+        width: 152px;
+        height: 124px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -152px;
+        opacity: 0;
+        margin-left: 94px;
+    }
+    .zoom {
+        opacity: 0;
+        width: 80%;
+        z-index: 999;
+        margin-left: 20px;
+    }
+    .zoom1 {
+        opacity: 0;
+        width: 100%;
+        z-index: 999;
+        margin-left: 3px;
+        margin-top: 20px;
+    }
+    .zoom2 {
+        opacity: 0;
+        width: 80%;
+        z-index: 999;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .zoom3 {
+        opacity: 0;
+        width: 100%;
+        z-index: 999;
+        margin-top: 40px;
+    }
+    .box-zoom1 {
+        width: 136px;
+        height: 170px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -200px;
+        opacity: 0;
+        margin-left: 68px;
+    }
+    .box-zoom3 {
+        width: 133px;
+        height: 200px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -240px;
+        opacity: 0;
+        margin-left: 102px;
+    }
+    .box-zoom4 {
+        width: 115px;
+        height: 160px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -192px;
+        opacity: 0;
+        margin-left: 88px;
+    }
+    .box-zoom5 {
+        width: 151px;
+        height: 112px;
+        background-color: #555555;
+        position: relative;
+        margin-top: -136px;
+        opacity: 0;
+        margin-left: 70px;
+    }
+    .zoom4 {
+        opacity: 0;
+        width: 110%;
+        z-index: 999;
+        margin-top: 20px;
+    }
+    .zoom5 {
+        opacity: 0;
+        width: 90%;
+        z-index: 999;
+        margin-top: -10px;
+        margin-left: 5px;
+    }
+    .box-zoom:hover, .box-zoom1:hover, .box-zoom2:hover, .box-zoom3:hover, .box-zoom4:hover, .box-zoom5:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0.8;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .zoom:hover, .zoom1:hover, .zoom2:hover, .zoom3:hover, .zoom4:hover, .zoom5:hover{
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    .family1 {
+        width: 90%;
+        text-align: center;
+        margin-left: 38px;
+        padding-top: 30px;
+        font-family: LemonTuesday;
+        color:  #303030;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 28px;
+        transform: matrix(1,0.0059,-0.0059,1.0008,0,0);
+    }
+    .family2-foto {
+        width: 180%;
+        margin-left: 40px;
+        margin-top: 90px;
+    }
+    .family2 {
+        width: 250%;
+        text-align: center;
+        margin-left: 4px;
+        padding-top: 45px;
+        font-family: LemonTuesday;
+        color:  #303030;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 28px;
+        transform: matrix(1,0.0059,-0.0059,1.0008,0,0);
+    }
+    .she {
+        width: 90%;
+        margin-top: 50px;
+        margin-left: 60px;
+        cursor: pointer;
+    }
+    .sisters {
+        width: 80%;
+        margin-left: 70px;
+    }
+    .he {
+        width: 160%;
+        margin-top: 4px;
+        margin-left: 60px;
+    }
+    .them {
+        width: 200%;
+        margin-left: 40px;
+        margin-top: 60px;
+    }
+    .olya {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.5em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        text-align: center;
+        margin-left: 110px;
+        margin-top: 25px;
+    }
+    .olya-and-sister {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.3em;
+        font-weight: 400;
+        text-align: center;
+        width: 140%;
+        line-height: 20px;
+        margin-top: 50px;
+    }
+    .sasha {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.5em;
+        font-weight: 400;
+        text-align: center;
+        margin-left: 120px;
+        margin-top: 70px;
+    }
+    .sasha-sister {
+        font-family: LemonTuesday;
+        color:  #3d3938;
+        font-size: 1.5em;
+        font-weight: 400;
+        text-align: center;
+        width: 200%;
+        line-height: 20px;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+}
+@media only screen and (min-width : 1460px) {
+    #header {
+        background-image: url("../img/header-background.png");
+        background-size: cover;
+        background-position: center center;
+        height: 1140px;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .foto {
+        margin-left: 56px;
+        cursor: pointer;
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.64);
+        border: 4px solid #ffffff;
+        width: 90%;
+    }
+    #footer {
+        height: 1200px;
+    }
+}
+
+
+
+

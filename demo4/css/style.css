@@ -1,0 +1,1636 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*BASIC STYLES */
+
+html, body {
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    /*overflow: scroll;*/
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 1.7857;
+    letter-spacing: normal;
+    color: #57402e;
+    background-color: #fff;
+}
+
+a {
+    color: #47403a;
+    font-weight: 600;
+}
+a:hover, a:active, a:focus, a:visited {
+    color: #47403a;
+    outline: none;
+}
+div {
+    outline: none;
+}
+
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav-collapse,
+.nav-collapse * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.nav-toggle {
+    position: fixed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    text-indent: -999px;
+    position: relative;
+    overflow: hidden;
+    width: 90px;
+    height: 75px;
+    float: right;
+    font-size: 58px;
+}
+
+.nav-toggle:before {
+    color: #e8c6aa; /* Edit this to change the icon color */
+    font-family: "responsivenav", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 58px;
+    text-transform: none;
+    position: absolute;
+    content: "≡";
+    text-indent: 0;
+    text-align: center;
+    line-height: 55px;
+    speak: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav-toggle.active::before {
+    font-size: 24px;
+    content:"x";
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #header {
+        background-image: url("../img/bride&groom.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 720px;
+        background-position: center;
+    }
+
+    .welcome {
+        text-transform: uppercase;
+        padding-top: 5px;
+    }
+    .names {
+        font-family: Marianns;
+        font-size: 70px;
+        color:  #3a2b1e;
+        font-weight: 400;
+        margin-top: 240px;
+        margin-left: 20px;
+    }
+    .love {
+        width: 3.6%;
+        margin-top: -24px;
+    }
+    .time {
+        font-size: 50px;
+        margin-top: -50px;
+        margin-left: 6%;
+    }
+
+    .ul-width a {
+        margin: 0;
+        padding: 1em;
+        float: left;
+        text-align: center;
+        border-bottom: 0;
+        color: #57402e;
+        text-decoration: none;
+        width: 100%;
+    }
+    .ul-width,
+    .ul-width ul {
+        list-style: none;
+        width: 100%;
+        float: left;
+        background: #e6ceb2;
+        border: 2px dotted #ffffff;
+        opacity: 0.6;
+    }
+
+    ul li {
+        display: inline-block;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        padding-left: 0;
+    }
+
+    .margin-top {
+        margin-top: 20px;
+    }
+    .bride, .groom{
+        width: 50%;
+        height: auto;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    #invitation-parallax {
+        background-image: url("../img/priglashenie.png");
+        background-position: center;
+        background-size: cover;
+        height: 460px;
+        background-repeat: no-repeat;
+    }
+    .invitation-text {
+        font-family: Marianns;
+        color:  #d5ccc5;
+        font-size: 44px;
+        line-height: 1.0357;
+        margin-top: 50px;
+    }
+
+    .countdown-text{
+        text-transform: uppercase;
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+    .sl__img {
+        width: 100%;
+        height: auto;
+        border: 10px solid #e8c6aa;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .sl2__img {
+        width: 99%;
+        height: auto;
+        border: 10px solid #e8c6aa;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .fon-cerem {
+        background-image: none;
+        background-size: cover;
+        height: 160px;
+        color:  #000000;
+        font-family: Marianns;
+        font-size: 50px;
+        padding-top: 50px;
+    }
+    #RSVP {
+        background-image: url("../img/background_rsvp.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 460px;
+    }
+    .gift-separator {
+        width: 25%;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    #footer {
+        background-image: url("../img/footer.png");
+        background-position: center;
+        background-size: cover;
+        height: 800px;
+    }
+    .text-foot-1 {
+        color:  #fcecdd;
+        font-size: 1.5em;
+        margin-top: 40px;
+    }
+    .uppercase {
+        text-transform: uppercase;
+    }
+    .map {
+        width: 20%;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    .map:hover {
+        width: 30%;
+    }
+    .text-reklama {
+        background: url("../img/foter_img.png") 50% 50% no-repeat ;
+        background-size: contain;
+        margin-top: 40px;
+        height: 240px;
+        color:  #121214;
+        font-size: 1.4em;
+        padding-top: 60px;
+        line-height: 25px;
+    }
+    .a-footer {
+        cursor: pointer;
+    }
+    .contacts {
+        color:  #fcecdd;
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+    .fb, .vk {
+        width: 40px;
+        margin-left: 0px;
+        margin-top: 4px;
+    }
+    .about-she {
+        color:  #47403a;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .rose {
+        width: 8%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .head-gift, .gift-text {
+        font-family: Marianns;
+        font-size: 50px;
+        color:  #000000;
+        line-height: 60px;
+    }
+    .start {
+        font-size: 1.35em;
+        font-weight: 600;
+        color:  #2b1a10;
+    }
+    .time-cer {
+        font-size: 24px;
+        font-weight: 600;
+        color:  #2b1a10;
+    }
+    .text-cerem {
+        padding-left: 135px;
+        padding-right: 135px;
+        color:  #2b1a10;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #header {
+        background-image: url("../img/bride&groom.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 540px;
+        background-position: center;
+    }
+
+    .welcome {
+        text-transform: uppercase;
+        padding-top: 5px;
+    }
+    .nav-collapse li {
+        width: 100%;
+        *width: 100%; /* IE7 Hack */
+        _width: 100%; /* IE6 Hack */
+    }
+    .nav-collapse a {
+        margin: 0;
+        padding: 1em;
+        float: left;
+        text-align: center;
+        border-bottom: 0;
+        border-right: 1px solid white;
+    }
+    .nav-collapse,
+    .nav-collapse ul {
+        list-style: none;
+        width: 100%;
+        float: left;
+    }
+
+    .nav-collapse li {
+        float: left;
+        width: 100%;
+    }
+
+    .nav-collapse a {
+        color: #57402e;
+        text-decoration: none;
+        width: 100%;
+        background: #e8c6aa;
+        border-bottom: 1px solid white;
+        padding: 0.7em 1em;
+        float: left;
+        opacity: 0.7;
+    }
+    .nav-collapse a:hover {
+        text-decoration: underline;
+    }
+    ul li {
+        display: inline-block;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        padding-left: 0;
+    }
+    .names {
+        font-family: Marianns;
+        font-size: 50px;
+        color:  #3a2b1e;
+        font-weight: 400;
+        margin-top: 160px;
+        margin-left: 30px;
+    }
+    .love {
+        width: 3.6%;
+        margin-top: -24px;
+    }
+    .margin-top {
+        margin-top: 20px;
+    }
+    .bride, .groom{
+        width: 50%;
+        height: auto;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    #invitation-parallax {
+        background-image: url("../img/priglashenie.png");
+        background-position: center;
+        background-size: cover;
+        height: 460px;
+        background-repeat: no-repeat;
+    }
+    .invitation-text {
+        font-family: Marianns;
+        color:  #d5ccc5;
+        font-size: 38px;
+        line-height: 1.0357;
+        margin-top: 50px;
+    }
+    .countdown {
+        height: 60px;
+        margin-bottom: 30px;
+    }
+    .countdown-section {
+        display: block;
+        float: left;
+        font-size: 65%;
+        text-align: center;
+    }
+    .countdown-text{
+        text-transform: uppercase;
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+    .sl__img {
+        width: 100%;
+        height: auto;
+        border: 10px solid #e8c6aa;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    .fon-cerem {
+        background-image: none;
+        background-size: cover;
+        height: 160px;
+        color:  #000000;
+        font-family: Marianns;
+        font-size: 50px;
+        padding-top: 50px;
+    }
+    #RSVP {
+        background-image: url("../img/background_rsvp.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 460px;
+    }
+    .gift-separator {
+        width: 40%;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    #footer {
+        background-image: url("../img/footer.png");
+        background-position: center;
+        background-size: cover;
+        height: 800px;
+    }
+    .text-foot-1 {
+        color:  #fcecdd;
+        font-size: 1.5em;
+        margin-top: 40px;
+    }
+    .uppercase {
+        text-transform: uppercase;
+    }
+    .map {
+        width: 20%;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    .map:hover {
+        width: 30%;
+    }
+    .text-reklama {
+        background: url("../img/foter_img.png") 50% 50% no-repeat ;
+        background-size: contain;
+        margin-top: 40px;
+        height: 240px;
+        color:  #121214;
+        font-size: 1.4em;
+        padding-top: 60px;
+        line-height: 25px;
+    }
+    .a-footer {
+        cursor: pointer;
+    }
+    .contacts {
+        color:  #fcecdd;
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+    .fb, .vk {
+        width: 40px;
+        margin-left: 0px;
+        margin-top: 4px;
+    }
+    .about-she {
+        color:  #47403a;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .rose {
+        width: 8%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .head-gift, .gift-text {
+        font-family: Marianns;
+        font-size: 40px;
+        color:  #000000;
+        line-height: 50px;
+    }
+    /* Arrows */
+    .slick-prev,
+    .slick-next
+    {
+        font-size: 0;
+        line-height: 0;
+
+        position: absolute;
+        top: -5%;
+
+        display: block;
+
+        width: 90px;
+        height: 90px;
+        padding: 0;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+
+        cursor: pointer;
+
+        color: #e8c6aa;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus
+    {
+        color: transparent;
+        outline: none;
+        background: transparent;
+    }
+    .slick-prev:hover:before,
+    .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before
+    {
+        opacity: 1;
+    }
+    .slick-prev.slick-disabled:before,
+    .slick-next.slick-disabled:before
+    {
+        opacity: .25;
+    }
+
+    .slick-prev:before,
+    .slick-next:before
+    {
+        font-family: 'slick';
+        font-size: 40px;
+        line-height: 1;
+
+        opacity: 0.35;
+        color: #e8c6aa;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .slick-prev
+    {
+        left: -20px;
+    }
+    [dir='rtl'] .slick-prev
+    {
+        right: -25px;
+        left: auto;
+    }
+    .slick-prev:before
+    {
+        content: '←';
+    }
+    [dir='rtl'] .slick-prev:before
+    {
+        content: '→';
+    }
+
+    .slick-next
+    {
+        right: -15px;
+    }
+    [dir='rtl'] .slick-next
+    {
+        right: auto;
+        left: -25px;
+    }
+    .slick-next:before
+    {
+        content: '→';
+    }
+    [dir='rtl'] .slick-next:before
+    {
+        content: '←';
+    }
+
+    .text-cerem {
+        padding-left: 105px;
+        padding-right: 105px;
+        color:  #2b1a10;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    #header {
+        background-image: url("../img/bride&groom.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 440px;
+        background-position: center;
+    }
+    .about-she {
+        color:  #47403a;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .invitation-text {
+        font-family: Marianns;
+        color:  #d5ccc5;
+        font-size: 2.8em;
+        line-height: 1.0357;
+        margin-top: 30px;
+    }
+    .sl__img {
+        width: 100%;
+        height: auto;
+        border: 10px solid #e8c6aa;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .rose {
+        width: 18%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .map {
+        width: 26%;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    .head-gift, .gift-text {
+        font-family: Marianns;
+        font-size: 3em;
+        color:  #000000;
+        line-height: 40px;
+    }
+    .text-cerem {
+        padding-left: 55px;
+        padding-right: 55px;
+        color:  #2b1a10;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    #header {
+        background-image: url("../img/bride&groom.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        background-position: center;
+    }
+    .time {
+        font-size: 50px;
+        margin-top: -50px;
+        margin-left: 6%;
+    }
+
+    .bride:hover, .groom:hover{
+        width: 65%;
+        height: auto;
+    }
+
+    .p-them {
+        color:  #999999;
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+    .them-name {
+        font-family: Marianns;
+        font-size: 44px;
+        font-weight: 600;
+        color:  #3a2b1e;
+    }
+
+
+
+    /* invitation */
+
+
+
+    /* Gallery */
+    .main__slide {
+        margin: 20px auto;
+        max-width: 1000px;
+    }
+
+    .sl2__img {
+        width: 97%;
+        height: auto;
+        border: 10px solid #e8c6aa;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #after-gallery, #gifts {
+        background-color: #F9F0E7;
+    }
+
+    .start {
+        font-size: 1.35em;
+        font-weight: 600;
+        color:  #2b1a10;
+    }
+    .time-cer {
+        font-size: 24px;
+        font-weight: 600;
+        color:  #2b1a10;
+    }
+    .text-cerem {
+        padding-left: 35px;
+        padding-right: 35px;
+        color:  #2b1a10;
+    }
+
+
+    /* RSVP */
+
+    .presents {
+        font-family: Marianns;
+        font-size: 70px;
+        color:  #f7efe8;
+    }
+    .gift-right {
+        width: 10%;
+    }
+
+    .margin {
+        margin-top: 30px;
+    }
+    .gift-img {
+        width: 60%;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .gift-img:hover {
+        width: 70%;
+    }
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+    .time {
+        font-size: 50px;
+        margin-top: -50px;
+        margin-left: 6%;
+    }
+
+    .bride:hover, .groom:hover{
+        width: 65%;
+        height: auto;
+    }
+
+    .p-them {
+        color:  #999999;
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+    .them-name {
+        font-family: Marianns;
+        font-size: 44px;
+        font-weight: 600;
+        color:  #3a2b1e;
+    }
+
+
+
+    /* invitation */
+
+
+
+    /* Gallery */
+    .main__slide {
+        margin: 20px auto;
+        max-width: 1000px;
+    }
+
+
+    #after-gallery, #gifts {
+        background-color: #F9F0E7;
+    }
+
+
+
+
+    /* RSVP */
+
+    .presents {
+        font-family: Marianns;
+        font-size: 70px;
+        color:  #f7efe8;
+    }
+    .gift-right {
+        width: 10%;
+    }
+
+    .margin {
+        margin-top: 30px;
+    }
+    .gift-img {
+        width: 50%;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .gift-img:hover {
+        width: 70%;
+    }
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .countdown {
+        height: 60px;
+        width: 50%;
+        margin-left: 190px;
+        margin-bottom: 50px;
+    }
+    .countdown-section {
+        display: block;
+        float: left;
+        font-size: 75%;
+        text-align: center;
+    }
+    /* Arrows */
+    .slick-prev,
+    .slick-next
+    {
+        font-size: 0;
+        line-height: 0;
+
+        position: absolute;
+        top: -5%;
+
+        display: block;
+
+        width: 90px;
+        height: 90px;
+        padding: 0;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+
+        cursor: pointer;
+
+        color: #e8c6aa;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus
+    {
+        color: transparent;
+        outline: none;
+        background: transparent;
+    }
+    .slick-prev:hover:before,
+    .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before
+    {
+        opacity: 1;
+    }
+    .slick-prev.slick-disabled:before,
+    .slick-next.slick-disabled:before
+    {
+        opacity: .25;
+    }
+
+    .slick-prev:before,
+    .slick-next:before
+    {
+        font-family: 'slick';
+        font-size: 40px;
+        line-height: 1;
+
+        opacity: 0.35;
+        color: #e8c6aa;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .slick-prev
+    {
+        left: -20px;
+    }
+    [dir='rtl'] .slick-prev
+    {
+        right: -25px;
+        left: auto;
+    }
+    .slick-prev:before
+    {
+        content: '←';
+    }
+    [dir='rtl'] .slick-prev:before
+    {
+        content: '→';
+    }
+
+    .slick-next
+    {
+        right: -15px;
+    }
+    [dir='rtl'] .slick-next
+    {
+        right: auto;
+        left: -25px;
+    }
+    .slick-next:before
+    {
+        content: '→';
+    }
+    [dir='rtl'] .slick-next:before
+    {
+        content: '←';
+    }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    #header {
+        background-image: url("../img/bride&groom.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 890px;
+        background-position: center;
+    }
+
+    .welcome {
+        text-transform: uppercase;
+        padding-top: 5px;
+    }
+
+    .navbar {
+        background-image: url("../img/menu_plashka.png");
+        background-size: cover;
+        height: 14%;
+        opacity: 0.7;
+        background-position: center;
+    }
+
+    .ul-width {
+        width: 100%;
+        list-style: none;
+        margin-top: 44px;
+    }
+    ul li {
+        display: inline-block;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    .names {
+        font-family: Marianns;
+        font-size: 70px;
+        color:  #3a2b1e;
+        font-weight: 400;
+        margin-top: 240px;
+    }
+    .love {
+        width: 3.6%;
+        margin-top: -24px;
+    }
+    .time {
+        font-size: 50px;
+        margin-top: -50px;
+        margin-left: 6%;
+    }
+    .bride, .groom{
+        width: 50%;
+        height: auto;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    .bride:hover, .groom:hover{
+        width: 65%;
+        height: auto;
+    }
+    .margin-top {
+        margin-top: -80px;
+    }
+    .p-them {
+        color:  #999999;
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+    .them-name {
+        font-family: Marianns;
+        font-size: 44px;
+        font-weight: 600;
+        color:  #3a2b1e;
+    }
+    .about-she {
+        color:  #47403a;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    /* invitation */
+
+    #invitation-parallax {
+        background-image: url("../img/priglashenie.png");
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .invitation-text {
+        font-family: Marianns;
+        color:  #d5ccc5;
+        font-size: 46px;
+        line-height: 1.0857;
+        margin-top: 50px;
+    }
+    .countdown {
+        width: 500px;
+        height: 60px;
+        margin-left: 230px;
+        margin-bottom: 50px;
+    }
+    .countdown-text{
+        text-transform: uppercase;
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+
+    /* Gallery */
+    .main__slide {
+        margin: 20px auto;
+        max-width: 1000px;
+    }
+    .sl__img {
+        width: 99%;
+        height: auto;
+        border: 10px solid #e8c6aa;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .sl2__img {
+        width: 97%;
+        height: auto;
+        border: 10px solid #e8c6aa;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #after-gallery, #gifts {
+        background-color: #F9F0E7;
+    }
+    .fon-cerem {
+        background-image: url("../img/fon_ceremony.png");
+        background-size: contain;
+        height: 133px;
+        color:  #000000;
+        font-family: Marianns;
+        font-size: 50px;
+        padding-top: 30px;
+    }
+    .start {
+        font-size: 1.35em;
+        font-weight: 600;
+        color:  #2b1a10;
+    }
+    .time-cer {
+        font-size: 24px;
+        font-weight: 600;
+        color:  #2b1a10;
+    }
+    .text-cerem {
+        padding-left: 35px;
+        padding-right: 35px;
+        color:  #2b1a10;
+    }
+    .rose {
+        width: 8%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    /* RSVP */
+    #RSVP {
+        background-image: url("../img/background_rsvp.png");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 460px;
+    }
+    .presents {
+        font-family: Marianns;
+        font-size: 70px;
+        color:  #f7efe8;
+    }
+    .gift-right {
+        width: 10%;
+    }
+    .head-gift, .gift-text {
+        font-family: Marianns;
+        font-size: 50px;
+        color:  #000000;
+        line-height: 60px;
+    }
+    .margin {
+        margin-top: 30px;
+    }
+    .gift-img {
+        width: 70%;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+        margin-top: 50px;
+    }
+    .gift-img:hover {
+        width: 70%;
+    }
+    .gift-separator {
+        width: 20%;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    #footer {
+        background-image: url("../img/footer.png");
+        background-position: center;
+        background-size: cover;
+        height: 440px;
+    }
+    .text-foot-1 {
+        color:  #fcecdd;
+        font-size: 20px;
+        margin-top: 90px;
+    }
+    .uppercase {
+        text-transform: uppercase;
+    }
+    .map {
+        width: 40%;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    .map:hover {
+        width: 50%;
+    }
+    .text-reklama {
+        background-image: url("../img/foter_img.png");
+        background-size: contain;
+        height: 188px;
+        margin-top: 140px;
+        color:  #121214;
+        font-size: 16px;
+        padding-top: 35px;
+        line-height: 25px;
+    }
+    .a-footer {
+        cursor: pointer;
+    }
+    .contacts {
+        color:  #fcecdd;
+        font-size: 20px;
+        margin-top: 90px;
+    }
+    .fb, .vk {
+        width: 160%;
+        margin-left: 100px;
+    }
+    .countdown-section {
+        display: block;
+        float: left;
+        font-size: 75%;
+        text-align: center;
+    }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    #header {
+        background-image: url("../img/bride&groom.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 990px;
+        background-position: center;
+    }
+
+    .welcome {
+        text-transform: uppercase;
+        padding-top: 5px;
+    }
+
+    .navbar {
+        background-image: url("../img/menu_plashka.png");
+        background-size: cover;
+        height: 14%;
+        opacity: 0.7;
+        background-position: center;
+    }
+
+    .ul-width {
+        width: 100%;
+        list-style: none;
+        margin-top: 54px;
+    }
+    ul li {
+        display: inline-block;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    .names {
+        font-family: Marianns;
+        font-size: 70px;
+        color:  #3a2b1e;
+        font-weight: 400;
+        margin-top: 240px;
+    }
+    .love {
+        width: 3.6%;
+        margin-top: -24px;
+    }
+    .time {
+        font-size: 50px;
+        margin-top: -50px;
+        margin-left: 6%;
+    }
+    .bride, .groom{
+        width: 50%;
+        height: auto;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    .bride:hover, .groom:hover{
+        width: 65%;
+        height: auto;
+    }
+    .margin-top {
+        margin-top: -80px;
+    }
+    .p-them {
+        color:  #999999;
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+    .them-name {
+        font-family: Marianns;
+        font-size: 44px;
+        font-weight: 600;
+        color:  #3a2b1e;
+    }
+    .about-she {
+        color:  #47403a;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    /* invitation */
+
+    #invitation-parallax {
+        background-image: url("../img/priglashenie.png");
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .invitation-text {
+        font-family: Marianns;
+        color:  #d5ccc5;
+        font-size: 46px;
+        line-height: 1.0857;
+        margin-top: 50px;
+    }
+    .countdown {
+        width: 500px;
+        height: 60px;
+        margin-left: 330px;
+    }
+    .countdown-text{
+        text-transform: uppercase;
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+
+    /* Gallery */
+    .main__slide {
+        margin: 20px auto;
+        max-width: 1000px;
+    }
+    .sl__img {
+        width: 99%;
+        height: auto;
+        border: 10px solid #e8c6aa;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .sl2__img {
+        width: 97%;
+        height: auto;
+        border: 10px solid #e8c6aa;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #after-gallery, #gifts {
+        background-color: #F9F0E7;
+    }
+    .fon-cerem {
+        background-image: url("../img/fon_ceremony.png");
+        background-size: contain;
+        height: 164px;
+        color:  #000000;
+        font-family: Marianns;
+        font-size: 50px;
+        padding-top: 50px;
+    }
+    .start {
+        font-size: 1.35em;
+        font-weight: 600;
+        color:  #2b1a10;
+    }
+    .time-cer {
+        font-size: 24px;
+        font-weight: 600;
+        color:  #2b1a10;
+    }
+    .text-cerem {
+        padding-left: 35px;
+        padding-right: 35px;
+        color:  #2b1a10;
+    }
+    .rose {
+        width: 8%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    /* RSVP */ 
+    #RSVP {
+        background-image: url("../img/background_rsvp.png");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 460px;
+    }
+    .presents {
+        font-family: Marianns;
+        font-size: 70px;
+        color:  #f7efe8;
+    }
+    .gift-right {
+        width: 10%;
+    }
+    .head-gift, .gift-text {
+        font-family: Marianns;
+        font-size: 50px;
+        color:  #000000;
+        line-height: 60px;
+    }
+    .margin {
+        margin-top: 30px;
+    }
+    .gift-img {
+        width: 60%;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .gift-img:hover {
+        width: 70%;
+    }
+    .gift-separator {
+        width: 20%;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    #footer {
+        background-image: url("../img/footer.png");
+        background-position: center;
+        background-size: cover;
+        height: 440px;
+    }
+    .text-foot-1 {
+        color:  #fcecdd;
+        font-size: 26px;
+        margin-top: 90px;
+    }
+    .uppercase {
+        text-transform: uppercase;
+    }
+    .map {
+        width: 40%;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    .map:hover {
+        width: 50%;
+    }
+    .text-reklama {
+        background-image: url("../img/foter_img.png");
+        background-size: contain;
+        height: 230px;
+        margin-top: 140px;
+        color:  #121214;
+        font-size: 18px;
+        padding-top: 50px;
+        line-height: 25px;
+    }
+    .a-footer {
+        cursor: pointer;
+    }
+    .contacts {
+        color:  #fcecdd;
+        font-size: 26px;
+        margin-top: 90px;
+    }
+    .fb, .vk {
+        width: 140%;
+        margin-left: 140px;
+    }
+    .countdown-section {
+        display: block;
+        float: left;
+        font-size: 75%;
+        text-align: center;
+    }
+    /* Arrows */
+    .slick-prev,
+    .slick-next
+    {
+        font-size: 0;
+        line-height: 0;
+
+        position: absolute;
+        top: 50%;
+
+        display: block;
+
+        width: 90px;
+        height: 90px;
+        padding: 0;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+
+        cursor: pointer;
+
+        color: #e8c6aa;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus
+    {
+        color: transparent;
+        outline: none;
+        background: transparent;
+    }
+    .slick-prev:hover:before,
+    .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before
+    {
+        opacity: 1;
+    }
+    .slick-prev.slick-disabled:before,
+    .slick-next.slick-disabled:before
+    {
+        opacity: .25;
+    }
+
+    .slick-prev:before,
+    .slick-next:before
+    {
+        font-family: 'slick';
+        font-size: 90px;
+        line-height: 1;
+
+        opacity: 0.35;
+        color: #e8c6aa;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .slick-prev
+    {
+        left: -90px;
+    }
+    [dir='rtl'] .slick-prev
+    {
+        right: -25px;
+        left: auto;
+    }
+    .slick-prev:before
+    {
+        content: '←';
+    }
+    [dir='rtl'] .slick-prev:before
+    {
+        content: '→';
+    }
+
+    .slick-next
+    {
+        right: -85px;
+    }
+    [dir='rtl'] .slick-next
+    {
+        right: auto;
+        left: -25px;
+    }
+    .slick-next:before
+    {
+        content: '→';
+    }
+    [dir='rtl'] .slick-next:before
+    {
+        content: '←';
+    }
+}
+@media only screen and (min-width : 1400px) {
+    #header {
+        background-image: url("../img/bride&groom.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1290px;
+        background-position: center;
+    }
+    .ul-width {
+        width: 100%;
+        list-style: none;
+        margin-top: 74px;
+    }
+    ul li {
+        display: inline-block;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        padding-left: 0;
+        padding-right: 10px;
+    }
+}
+
+/* CSS Document */

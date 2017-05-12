@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Amarillo;
+    src: url(../fonts/Amarillo/Amarillo.otf);
+	src: url(../fonts/Amarillo/Amarillo.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Karton;
+	src: url(../fonts/Karton-Regular.ttf);
+	font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+	font-family: LemonTuesday;
+	src: url(../fonts/Lemon-Tuesday.otf);
+	font-style: normal;
+    font-weight: normal;
+}

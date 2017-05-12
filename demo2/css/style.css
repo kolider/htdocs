@@ -1,0 +1,1394 @@
+@charset "utf-8";
+/*BASIC STYLES */
+
+html, body {
+	height: 100%;
+    overflow-x: hidden;
+	/*overflow: scroll;*/
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	font-weight: 200;
+	line-height: 1.7857;
+	letter-spacing: 0.075em;
+	color:#4E4E4E;
+	background-color: #fff;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  max-width: 100%;
+  height: auto;
+display: inline-block;
+}
+a {
+	color: white;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+
+p {
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin-top: 32px;
+}
+
+input, textarea{
+	outline: none;
+}
+
+label{
+	font-weight: 300;
+}
+div {
+	outline: none;
+}
+.back-to-top {
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 5%;
+	display:none;
+}
+
+/*  HEADER */
+
+/**
+ * Hint graphic that appears while menu is inactive
+ */
+
+.meny-arrow {
+position: absolute;
+z-index: 10;
+border: 16px solid transparent;
+-webkit-transition: opacity 0.4s ease 0.4s;
+-moz-transition: opacity 0.4s ease 0.4s;
+-ms-transition: opacity 0.4s ease 0.4s;
+-o-transition: opacity 0.4s ease 0.4s;
+transition: opacity 0.4s ease 0.4s;
+}
+.meny-left .meny-arrow {
+left: 14px;
+top: 50%;
+margin-top: -16px;
+border-left: 0px solid #fff;
+}
+
+.meny-active .meny-arrow {
+opacity: 0;
+-webkit-transition: opacity 0.2s ease;
+-moz-transition: opacity 0.2s ease;
+-ms-transition: opacity 0.2s ease;
+-o-transition: opacity 0.2s ease;
+transition: opacity 0.2s ease;
+}
+
+.tablet-header {
+	margin-top: 40px;
+	width: 17%;
+	opacity: 0.7;
+}
+
+.menu {
+	color: white;
+	font-size: 28px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* ceremony */
+.countdown {
+	width: 300px;
+	height: 70px;
+}
+
+
+.head-cerem{
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.time {
+	font-weight: 800;
+}
+
+.she {
+	width: 60%;
+}
+.he {
+	width: 60%;
+}
+.abot-us-text {
+	padding: 20px 50px;
+}
+
+
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 1%;
+
+    display: block;
+
+    width: 20%;
+    height: 140px;
+    padding: 0;
+    -webkit-transform: translate(0, -80%);
+    -ms-transform: translate(0, -80%);
+    transform: translate(0, -80%);
+
+    cursor: pointer;
+
+    color: #7f8756;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+
+    opacity: .75;
+    color: #7f8756;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+.text-section {
+	margin-top: -40px;
+	margin-bottom: 20px;
+}
+
+/* footer */
+
+
+.black {
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 30px;
+}
+
+.gift-img{
+	width:80%;
+}
+
+
+/* CSS Document */
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.contents {
+	background-image: url(../img/zaglavnaya.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 584px;
+}
+.meny {
+	display: none;
+	padding: 1%;
+	overflow: auto;
+	background: #7f8756;
+	background-size: contain;
+	color: #eee;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.meny h2 {
+	text-align: center;
+	margin-top: 60px;
+	font-size: 2.25em;
+}
+.meny ul {
+	margin-top:100px;
+}
+.meny ul li {
+	display: inline-block;
+	width: 200px;
+	list-style: none;
+	font-size: 1.125em;
+	padding: 3px 28px;
+	text-transform: uppercase;
+}
+
+
+.ceremony-head1, .ceremony-head2 {
+	font-size:1.2em;
+}
+
+.text-aligh_r {
+	text-align: right;
+	padding: 30px 50px;
+}
+.text-aligh_l {
+	text-align: left;
+	padding: 30px 50px;
+}
+.vk {
+	width: 10%;
+}
+.fs {
+	width: 10%;
+	margin-top: 16px;
+}
+	/* photo */
+#carousel img {
+	opacity: 0.3;
+	transition: all 300ms ease;
+	-moz-transform:scale(1,0.8);
+	-ms-transform:scale(1,0.8);
+	-o-transform:scale(1,0.8);
+	-webkit-transform:scale(1,0.8);
+	transform:scale(1,0.8);
+	z-index: 9;
+	margin-left: 20px;
+}
+#carousel .slick-center img{
+	-moz-transform:scale(1.08);
+	-ms-transform:scale(1.08);
+	-o-transform:scale(1.08);
+	-webkit-transform:scale(1.08);
+	opacity:1;
+	transform:scale(1.08);
+    z-index: 1;
+	margin-left: 20px;
+}
+.foto {
+	width: 96%;
+}
+.green {
+	color: #7f8756;
+	padding: 30px;
+}
+.gift1 {
+	width: 40%;
+	}
+
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.contents {
+	background-image: url(../img/zaglavnaya.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+.meny {
+	display: none;
+	padding: 1%;
+	overflow: auto;
+	background: #7f8756;
+	background-size: cover;
+	color: #eee;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 160px;
+}
+.meny h2 {
+	text-align: center;
+	margin-top: 40px;
+	font-size: 2.125em;
+}
+.meny ul {
+	margin-top:80px;
+}
+.meny ul li {
+	display: inline-block;
+	width: 200px;
+	list-style: none;
+	font-size: 1em;
+	padding: 3px 28px;
+	text-transform: uppercase;
+}
+.menu-img {
+	width:80%;
+}
+.text-invitation {
+	width: 90%;
+	margin-top: 60px;
+}
+.is-countdown {
+	background-color: transparent;
+	margin-left: 28%;
+	margin-top: 40px;
+}
+
+
+.ceremony-head-h{
+		font-size: 1em;
+		margin-top: 48px;
+		position: absolute;
+		margin-left: 26%;
+		width: 60px;
+}
+
+.ceremony-1 {
+	width: 94%;
+	padding:10px 0 0 0;
+}
+.ceremony-2 {
+	width:100%;
+	padding:10px 0 0 0;
+}
+.ceremony-3 {
+	width: 94%;
+	padding-top:10px;
+}
+.ceremony-4 {
+	width:100%;
+	padding:10px 0 0 0;
+}
+.text-aligh_r {
+	text-align: right;
+	padding: 10px 12px;
+}
+.text-aligh_l {
+	text-align: left;
+	padding: 10px 12px;
+}
+.main-text {
+	font-size: 0.75em;
+}
+.vk {
+	width: 10%;
+}
+.fs {
+	width: 10%;
+	margin-top: 10px;
+}
+.abot-us-text p {
+	font-size: 0.875em;
+}
+.about-text-green {
+    font-size: 0.75em;
+}
+
+.green {
+	color: #7f8756;
+	padding: 10px;
+	font-size: 0.875em;
+	margin-top: -40px;
+}
+.black {
+   font-size: 0.875em;
+}
+.gift1 {
+	width: 40%;
+}
+.h-gift {
+    font-size: 1em;
+	font-weight: 900;
+	padding-bottom: 40px;
+}
+.head-gift {
+	font-size: 0.75em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.left {
+	margin-left: 50px;
+}
+.fon-about {
+	background-image: url(../img/hand.jpg);
+	background-size: cover;
+	height: 440px;
+}
+.unnamed {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	opacity: 0.8;
+	width: 20%;
+}
+	/* photo */
+#carousel img {
+	opacity: 0.3;
+	transition: all 300ms ease;
+	-moz-transform:scale(1,0.8);
+	-ms-transform:scale(1,0.8);
+	-o-transform:scale(1,0.8);
+	-webkit-transform:scale(1,0.8);
+	transform:scale(1,0.8);
+	z-index: 9;
+	margin-left: 14px;
+	}
+#carousel .slick-center img{
+	-moz-transform:scale(1.08);
+	-ms-transform:scale(1.08);
+	-o-transform:scale(1.08);
+	-webkit-transform:scale(1.08);
+	opacity:1;
+	transform:scale(1.08);
+	z-index: 1;
+	margin-left: 14px;
+	}
+.slick-prev{
+	left: -70px;
+}
+.slick-next{
+	right: -70px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.contents {
+	background-image: url(../img/zaglavnaya.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 400px;
+}
+.meny {
+	display: none;
+	padding: 1%;
+	overflow: auto;
+	background: #7f8756;
+	background-size: cover;
+	color: #eee;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 160px;
+}
+.meny h2 {
+	text-align: center;
+	margin-top: 40px;
+	font-size: 2.125em;
+}
+.meny ul {
+	margin-top:80px;
+}
+.meny ul li {
+	display: inline-block;
+	width: 200px;
+	list-style: none;
+	font-size: 1em;
+	padding: 3px 28px;
+	text-transform: uppercase;
+}
+.menu-img {
+	width:80%;
+}
+
+.ceremony-head1 {
+	font-size: 1em;
+	margin-top: 66px;
+	margin-bottom: 80px;
+	position: relative;
+	margin-left: 0px;
+	font-weight: 700;
+	margin-right: 0px;
+}
+.ceremony-head2 {
+	font-size: 1em;
+	margin-top: 66px;
+	margin-bottom: 80px;
+	position: relative;
+	margin-left: 0px;
+	font-weight: 700;
+	margin-right: 0px;
+}
+.text-invitation {
+	width: 90%;
+	margin-top: 60px;
+}
+
+.countdown-section {
+	display: block;
+	float: left;
+	font-size: 60%;
+	text-align: center;
+}
+
+.ceremony-head {
+	font-size: 1em;
+	margin-top: 66px;
+	margin-bottom: 80px;
+	position: relative;
+	margin-left: 0px;
+	font-weight: 700;
+	margin-right: 0px;
+}
+.ceremony {
+	width: 60%;
+}
+.padd-ceremony-text {
+	padding: 40px 80px;
+}
+.vk {
+	width: 4%;
+    margin-left: 0px;
+	}
+.fs {
+	width: 4%;
+	margin-top: 10px;
+	margin-left: 20px;
+	}
+.she, .he {
+	width: 200px;
+	margin-bottom: 20px;
+}
+.abot-us-text p {
+	font-size: 0.875em;
+	padding: 10px 40px;
+}
+.slick-prev{
+	left: -4px;
+}
+.slick-next{
+	right: -4px;
+}
+.about-text-green {
+	font-size: 0.6em;
+}
+.fon-about {
+	height: 300px;
+}
+
+.about-text-green {
+	color:azure;
+	padding: 10px;
+	font-style: italic;
+	opacity: 0.8;
+	margin-bottom: 40px;
+	line-height: 1.9857;
+}
+.unnamed {
+	margin-bottom: 10px;
+}
+	.top-gift {
+		margin-top: 30px;
+	}
+	.left {
+		margin-left: 16%;
+	}
+	.gift-img {
+		width: 50%;
+	}
+	.is-countdown {
+		border:2px dotted #ccc;
+		border-radius: 50px;
+		background-color: transparent;
+		margin-left: 16%;
+		margin-top: 50px;
+		width: 70%;
+		padding-top: 10px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+ .contents {
+	background-image: url(../img/zaglavnaya.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+.meny {
+	display: none;
+	padding: 0px;
+	overflow: auto;
+	background: #7f8756;
+	background-size: cover;
+	color: #eee;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.meny h2 {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 1.5em;
+}
+.meny ul {
+	margin-top:40px;
+}
+.meny ul li {
+	display: inline-block;
+	width: 200px;
+	list-style: none;
+	font-size: 0.875em;
+	padding: 3px 48px;
+	text-transform: uppercase;
+}
+.menu-img {
+	width:70%;
+}
+.text-invitation {
+	width: 100%;
+	margin-top: 60px;
+}
+	.is-countdown {
+		border:2px dotted #ccc;
+		border-radius: 50px;
+		background-color: transparent;
+		margin-left: 16%;
+		margin-top: 50px;
+		width: 70%;
+		padding-top: 10px;
+	}
+.ceremony {
+	width: 80%;
+}
+.padd-ceremony-text {
+	padding: 40px 40px;
+}
+.ceremony-head1 {
+	margin-top: 0px;
+	margin-bottom: 60px;
+}
+.abot-us-text {
+	padding: 20px 10px;
+}
+.fon-about {
+	height: 400px;
+}
+.unnamed {
+	width: 30%;
+}
+.about-text-green {
+	padding: 5px;
+}
+.vk, .fs {
+	width: 10%;
+}
+.foto {
+	width: 130%;
+}
+	/* photo */
+	#carousel img {
+		opacity: 0.3;
+		transition: all 300ms ease;
+		-moz-transform:scale(1,0.8);
+		-ms-transform:scale(1,0.8);
+		-o-transform:scale(1,0.8);
+		-webkit-transform:scale(1,0.8);
+		transform:scale(1,0.8);
+		z-index: 9;
+		width: 0px;
+	}
+	#carousel .slick-center img{
+		-moz-transform:scale(1.08);
+		-ms-transform:scale(1.08);
+		-o-transform:scale(1.08);
+		-webkit-transform:scale(1.08);
+		opacity:1;
+		transform:scale(1.08);
+		z-index: 1;
+		width:400px;
+		margin-left: -60px;
+	}
+	.slick-prev{
+		left: -4px;
+		top:70%;
+		z-index: 10;
+	}
+	.slick-next{
+		right: -4px;
+		top:70%;
+		z-index: 10;
+	}
+	.slick-prev:before, .slick-next:before {
+		color: #ffffff;
+	}
+	.text-section, .form-control, .h-gift {
+		font-size: 0.875em;
+	}
+	.black {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+.top-gift {
+	margin-top: 30px;
+}
+.left {
+	margin-left: 16%;
+}
+.gift-img {
+	width: 60%;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	#footer {
+		background-image: url("../img/footer.png");
+		height: 460px;
+		margin-top: 80px;
+		color: #ffffff;
+	}
+	.contact-h {
+		font-size: 1.2em;
+		text-transform: uppercase;
+		padding-top: 20px;
+		font-weight: 900;
+	}
+	.name {
+		font-size: 1em;
+		text-transform: uppercase;
+	}
+	.bold-cont {
+		font-size: 1.2em;
+		text-transform: uppercase;
+		padding-top: 20px;
+		font-weight: 900;
+		font-style: italic;
+	}
+	.img-cont {
+		width: 30%;
+	}
+	.text-index {
+		font-size: 1.3em;
+		padding-top: 15px;
+		font-weight: 400;
+	}
+	.owr-site {
+		text-decoration: underline;
+	}
+	.bride_groop {
+		width: 35%;
+		padding-top: 20px;
+	}
+	.is-countdown {
+		border:2px dotted #ccc;
+		border-radius: 50px;
+		background-color: transparent;
+		margin-left: 16%;
+		margin-top: 50px;
+		width: 73%;
+		padding-top: 10px;
+	}
+	.ramka {
+		margin-top: 60px;
+		margin-bottom: 80px;
+		width: 90%;
+	}
+	.head-text {
+		text-transform: uppercase;
+		font-size: 1em;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.time-required {
+		margin-top: 35px;
+		text-transform: uppercase;
+	}
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	.head-text {
+		text-transform: uppercase;
+		font-size: 1em;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.ramka {
+		margin-top: 60px;
+		margin-bottom: 80px;
+		width: 80%;
+	}
+	#footer {
+		background-image: url("../img/footer.png");
+		height: 460px;
+		margin-top: 80px;
+		color: #ffffff;
+	}
+	.contact-h {
+		font-size: 1.2em;
+		text-transform: uppercase;
+		padding-top: 20px;
+		font-weight: 900;
+	}
+	.name {
+		font-size: 1em;
+		text-transform: uppercase;
+	}
+	.bold-cont {
+		font-size: 1.2em;
+		text-transform: uppercase;
+		padding-top: 20px;
+		font-weight: 900;
+		font-style: italic;
+	}
+	.img-cont {
+		width: 30%;
+	}
+	.text-index {
+		font-size: 1.3em;
+		padding-top: 15px;
+		font-weight: 400;
+	}
+	.owr-site {
+		text-decoration: underline;
+	}
+	.bride_groop {
+		width: 35%;
+		padding-top: 20px;
+	}
+	.time-required {
+		margin-top: 35px;
+		text-transform: uppercase;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	.head-text {
+		text-transform: uppercase;
+		font-size: 1em;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.ramka {
+		margin-top: 60px;
+		margin-bottom: 80px;
+		width: 70%;
+	}
+	#footer {
+		background-image: url("../img/footer.png");
+		height: 460px;
+		margin-top: 80px;
+		color: #ffffff;
+	}
+	.contact-h {
+		font-size: 1.2em;
+		text-transform: uppercase;
+		padding-top: 20px;
+		font-weight: 900;
+	}
+	.name {
+		font-size: 1em;
+		text-transform: uppercase;
+	}
+	.bold-cont {
+		font-size: 1.2em;
+		text-transform: uppercase;
+		padding-top: 20px;
+		font-weight: 900;
+		font-style: italic;
+	}
+	.img-cont {
+		width: 30%;
+	}
+	.text-index {
+		font-size: 1.3em;
+		padding-top: 15px;
+		font-weight: 400;
+	}
+	.owr-site {
+		text-decoration: underline;
+	}
+	.bride_groop {
+		width: 35%;
+		padding-top: 20px;
+	}
+	.time-required {
+		margin-top: 35px;
+		text-transform: uppercase;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.countdown-section {
+		display: block;
+		float: left;
+		font-size: 72%;
+		text-align: center;
+		background-image: url("../img/taimer.png");
+		height: 66px;
+		width: 18%;
+	}
+	.head-text {
+		text-transform: uppercase;
+		font-size: 1em;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.countdown {
+		width: 290px;
+	}
+	.is-countdown {
+		background-color: transparent;
+		margin-left:30%;
+		margin-top: 40px;
+	}
+	.about-text-green {
+		color:azure;
+		padding: 40px;
+		font-style: italic;
+		opacity: 0.8;
+		margin-bottom: 40px;
+		line-height: 1.9857;
+	}
+	.ramka {
+		margin-top: 60px;
+		margin-bottom: 80px;
+		width: 60%;
+	}
+	.ceremony-head {
+		font-size: 1em;
+		margin-top: 46px;
+		position: absolute;
+		margin-left: 29%;
+		width: 60px;
+	}
+	.ceremony-head1 {
+		font-size: 1em;
+		margin-top: 46px;
+		position: absolute;
+		margin-left: 29%;
+		width: 60px;
+	}
+	.ceremony-head2 {
+		font-size: 1em;
+		margin-top: 47px;
+		position: absolute;
+		margin-left: 32%;
+		width: 80px;
+	}
+	#footer {
+		background-image: url("../img/footer.png");
+		height: 260px;
+		margin-top: 80px;
+		color: #ffffff;
+	}
+	.contact-h {
+		font-size: 1.2em;
+		text-transform: uppercase;
+		padding-top: 20px;
+	}
+	.name {
+		font-size: 1em;
+		text-transform: uppercase;
+	}
+	.bold-cont {
+		font-size: 1.2em;
+		text-transform: uppercase;
+		padding-top: 20px;
+		font-weight: 900;
+		font-style: italic;
+	}
+	.img-cont {
+		width: 50%;
+	}
+	.text-index {
+		font-size: 1em;
+		padding-top: 15px;
+		font-weight: 400;
+	}
+	.owr-site {
+		text-decoration: underline;
+	}
+	.bride_groop {
+		width: 65%;
+		padding-top: 20px;
+	}
+	.time-required {
+		margin-top: 35px;
+		text-transform: uppercase;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.ramka {
+		margin-top: 60px;
+		margin-bottom: 80px;
+	}
+	.is-countdown {
+		background-color: transparent;
+		margin-left:35%;
+		margin-top: 40px;
+	}
+	.head-text {
+		text-transform: uppercase;
+		font-size: 1.2em;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.ceremony-head1 {
+		margin-top: 50px;
+		position: absolute;
+		margin-left: 20%;
+		width:100px;
+		font-size: 1.2em;
+	}
+	.ceremony-head2 {
+		margin-top: 50px;
+		position: absolute;
+		margin-left: 20%;
+		width: 100px;
+		font-size: 1.2em;
+	}
+	.ceremony-head-h{
+		font-size: 1.2em;
+		margin-top: 46px;
+		position: absolute;
+		margin-left: 19%;
+		width: 60px;
+	}
+	.ceremony-head {
+		margin-left: 18%;
+		margin-top: 50px;
+		font-size: 1.2em;
+	}
+	.menu-img {
+	width:100%;
+}
+	.text-invitation {
+	width: 70%;
+	margin-top: 60px;
+}
+	.ceremony-1 {
+	width: 94%;
+	padding:10px 0 0 0;
+	margin-left: 20px;
+}
+	.slick-prev
+	{
+	left: -100px;
+	}
+	.slick-next{
+	right: -100px;
+	}
+	.ceremony-2 {
+	width:94%;
+	padding:10px 0 0 0;
+}
+	.ceremony-3 {
+	width: 94%;
+	padding-top:10px;
+	margin-left: 20px;
+}
+	.ceremony-4 {
+	width:94%;
+	padding:10px 0 30px 0;
+}
+	.main-text {
+	font-size: 0.875em;
+}
+	.h-gift {
+	font-size: 1.4em;
+	font-weight: 600;
+	padding-bottom: 40px;
+}
+	.head-gift {
+	font-size: 1em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+	.left {
+	margin-left: 90px;
+}
+
+   .head-gift {
+	font-size: 0.875em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+	.fon-about {
+	background-image: url(../img/hand.jpg);
+	background-size: cover;
+}
+	.unnamed {
+	margin-top: 60px;
+	margin-bottom: 40px;
+	opacity: 0.8;
+}
+	#footer {
+		background-image: url("../img/footer.png");
+		height: 260px;
+		margin-top: 80px;
+		color: #ffffff;
+	}
+	.contact-h {
+		font-size: 1.5em;
+		text-transform: uppercase;
+		padding-top: 20px;
+	}
+	.name {
+		font-size: 1.2em;
+		text-transform: uppercase;
+	}
+	.bold-cont {
+		font-size: 1.5em;
+		text-transform: uppercase;
+		padding-top: 20px;
+		font-weight: 900;
+		font-style: italic;
+	}
+	.img-cont {
+		width: 50%;
+	}
+	.text-index {
+		font-size: 1em;
+		padding-top: 5px;
+		font-weight: 400;
+	}
+	.owr-site {
+		text-decoration: underline;
+	}
+	.bride_groop {
+		width: 50%;
+		padding-top: 20px;
+	}
+	.time-required {
+		margin-top: 35px;
+		text-transform: uppercase;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.head-text {
+		text-transform: uppercase;
+		font-size: 1.2em;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.is-countdown {
+		background-color: transparent;
+		margin-left:37%;
+		margin-top: 6px;
+	}
+.contents {
+	background-image: url(../img/zaglavnaya.jpg);
+	width: 100%;
+	height: 800px;
+}
+	.meny {
+	display: none;
+	padding: 20px;
+	overflow: auto;
+	background: #7f8756;
+	color: #eee;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+	.meny h2 {
+	text-align: center;
+	margin-top: 40px;
+	font-size: 36px;
+}
+	.meny ul {
+	margin-top:140px;
+	}
+	.meny ul li {
+	display: inline-block;
+	width: 200px;
+	list-style: none;
+	font-size: 1.125em;
+	padding: 3px 10px;
+	text-transform: uppercase;
+	}
+	.ramka {
+	margin-top: 60px;
+	margin-bottom: 80px;
+}
+	.ceremony-head {
+	margin-left: 18%;
+	margin-top: 54px;
+	font-size: 1.5em;
+	}
+	.text-aligh_r {
+	text-align: right;
+	padding: 50px;
+}
+	.text-aligh_l {
+	text-align: left;
+	padding: 50px;
+}
+	.vk {
+	width: 8%;
+}
+	.fs {
+	width: 8%;
+	margin-top: 16px;
+}
+	/* photo */
+	#carousel img {
+	opacity: 0.3;
+	transition: all 300ms ease;
+	-moz-transform:scale(1,0.8);
+	-ms-transform:scale(1,0.8);
+	-o-transform:scale(1,0.8);
+	-webkit-transform:scale(1,0.8);
+	transform:scale(1,0.8);
+	z-index: 9;
+	margin-left: 20px;
+}
+	#carousel .slick-center img{
+	-moz-transform:scale(1.08);
+	-ms-transform:scale(1.08);
+	-o-transform:scale(1.08);
+	-webkit-transform:scale(1.08);
+	opacity:1;
+	transform:scale(1.08);
+    z-index: 1;
+	margin-left: 16px;
+}
+	.green {
+	color: #7f8756;
+	padding: 70px;
+}
+	.ceremony-head2 {
+		margin-top: 52px;
+		position: absolute;
+		margin-left: 20%;
+		width: 100px;
+		font-size: 1.5em;
+	}
+	.ceremony-head1 {
+		margin-top: 54px;
+		position: absolute;
+		margin-left: 20%;
+		width:100px;
+		font-size: 1.5em;
+	}
+	.ceremony-head-h{
+		font-size: 1.5em;
+		margin-top: 52px;
+		position: absolute;
+		margin-left: 18.5%;
+		width: 60px;
+	}
+	#footer {
+		background-image: url("../img/footer.png");
+		height: 260px;
+		margin-top: 80px;
+		color: #ffffff;
+	}
+	.contact-h {
+		font-size: 1.5em;
+		text-transform: uppercase;
+		padding-top: 20px;
+	}
+	.name {
+		font-size: 1.2em;
+		text-transform: uppercase;
+	}
+	.bold-cont {
+		font-size: 1.5em;
+		text-transform: uppercase;
+		padding-top: 20px;
+		font-weight: 900;
+		font-style: italic;
+	}
+	.img-cont {
+		width: 50%;
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+		transition: all 1s ease;
+		cursor: pointer;
+	}
+	.img-cont:hover {
+		width: 60%;
+	}
+	.text-index {
+		font-size: 1em;
+		padding-top: 5px;
+		font-weight: 400;
+	}
+	.owr-site {
+		text-decoration: underline;
+	}
+	.bride_groop {
+		width: 50%;
+		padding-top: 20px;
+	}
+	.time-required {
+		margin-top: 35px;
+		text-transform: uppercase;
+	}
+}

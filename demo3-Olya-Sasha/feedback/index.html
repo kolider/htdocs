@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Всплывающая форма отправки данных - blog.sklazer.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="js/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+
+<div id="popupform">
+    <h2>Обратная связь</h2>
+    <div class="comment">Оставьте Ваши данные и мы свяжемся с Вами</div>
+    <form method="post" id="form-feedback">
+        <input type="text" placeholder="Ваше имя" name="name" id="name" class="input_text"/>
+        <div id="bthrow_error_name"></div>
+        <input type="text" placeholder="Контактный телефон или электронная почта" name="phone" id="phone" class="input_text"/>
+        <div id="bthrow_error_phone"></div>
+        <input class="button" type="submit" value="Отправить заявку" />
+        <div class="throw_error"></div>
+    </form>
+
+    <span class="under-form">Мы не занимаемся рассылкой рекламных сообщений, а так же не передаем контактные данные третьим лицам.</span>
+</div>
+
+<a href="#popupform" id="popupbutton">Всплывающее окно</a>
+
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

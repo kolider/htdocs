@@ -1,0 +1,68 @@
+/*
+ * simplyScroll 2 - a scroll-tastic jQuery plugin
+ *
+ * http://logicbox.net/jquery/simplyscroll
+ *
+ * Copyright (c) 2009-2012 Will Kelly - http://logicbox.net
+ *
+ * Dual licensed under the MIT and GPL licenses.
+ *
+ * Last revised: 31/01/2012
+ *
+ */
+
+/* Default/Master classes
+
+Example markup format (for horizontal scroller)
+Note all DIVs are generated and should not be hard-coded
+
+<div class="your-custom-class simply-scroll-container">
+	<div class="simply-scroll-btn simply-scroll-btn-left"></div>
+	<div class="simply-scroll-btn simply-scroll-btn-right"></div>
+	<div class="simply-scroll-clip">
+		<ul class="simply-scroll-list">
+			<li>...</li>
+			...
+		</ul>
+	</div>
+</div>
+
+
+*/
+
+.simply-scroll-container { /* Container DIV - automatically generated */
+    width: 40%;
+}
+
+.simply-scroll-clip { /* Clip DIV - automatically generated */
+    position: relative;
+    overflow: hidden;
+}
+
+.simply-scroll-list { /* UL/OL/DIV - the element that simplyScroll is inited on */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 900px;
+}
+
+
+
+/* Vertical scroller example */
+
+.vert { /* wider than clip to position buttons to side */
+    height: auto;
+    margin-bottom: 1.5em;
+    float: left;
+    padding-left: 50px;
+    margin-right: 60px;
+}
+
+.vert .simply-scroll-clip {
+    width: 900px;
+    height: 400px;
+}
+
+
+/* NOTE left-right classes wouldn't be needed on vertical scroller */
