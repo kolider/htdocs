@@ -69,7 +69,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	font-family: 'Old Standard TT', serif;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -933,7 +933,7 @@ margin-left: 100px;
 	height: auto;
 }
 	.carousel-caption h1 {
-	font-size:46px;
+	font-size:40px;
 	margin-bottom:0;
 	line-height:27px;
 	letter-spacing:2px;
@@ -955,10 +955,9 @@ margin-left: 100px;
 	font-weight:200;
 	text-transform:uppercase;
 	letter-spacing:2px;
-	margin-bottom:50px;
+	margin-bottom:30px;
 	margin-top: 50px;
 	margin-right:  25%;
-
 }
 .carousel-fluid h4 {
 	font-size:30px;
