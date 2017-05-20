@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with www.majento.ru -->
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+	<loc>http://www.credolove.com/</loc>
+	<lastmod>2017-05-20T16:14:38+03:00</lastmod>
+	<priority>1.00</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://www.credolove.com/demo/shablonu.html</loc>
+	<lastmod>2017-05-20T16:14:38+03:00</lastmod>
+	<priority>0.80</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://www.credolove.com/demo/shablonu_love.html</loc>
+	<lastmod>2017-05-20T16:14:38+03:00</lastmod>
+	<priority>0.80</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://www.credolove.com/demo/shablonu_nature.html</loc>
+	<lastmod>2017-05-20T16:14:38+03:00</lastmod>
+	<priority>0.80</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://www.credolove.com/demo1</loc>
+	<lastmod>2017-05-20T16:14:38+03:00</lastmod>
+	<priority>0.90</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://www.credolove.com/demo2/</loc>
+	<lastmod>2017-05-20T16:14:38+03:00</lastmod>
+	<priority>0.90</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>http://www.credolove.com/demo4/</loc>
+	<lastmod>2017-05-20T16:14:38+03:00</lastmod>
+	<priority>0.90</priority>
+	<changefreq>weekly</changefreq>
+</url>
+</urlset>
