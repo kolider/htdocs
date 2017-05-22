@@ -3,44 +3,8 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
 	<loc>https://credolove.com</loc>
-	<lastmod>2017-05-21T01:27:32+03:00</lastmod>
+	<lastmod>2017-05-22T15:27:32+03:00</lastmod>
 	<priority>0.90</priority>
 	<changefreq>daily</changefreq>
-</url>
-<url>
-	<loc>https://credolove.com/demo/shablonu.html</loc>
-	<lastmod>2017-05-21T01:27:32+03:00</lastmod>
-	<priority>0.10</priority>
-	<changefreq>weekly</changefreq>
-</url>
-<url>
-	<loc>https://credolove.com/demo/shablonu_love.html</loc>
-	<lastmod>2017-05-21T01:27:32+03:00</lastmod>
-	<priority>0.10</priority>
-	<changefreq>weekly</changefreq>
-</url>
-<url>
-	<loc>https://credolove.com/demo/shablonu_nature.html</loc>
-	<lastmod>2017-05-21T01:27:32+03:00</lastmod>
-	<priority>0.10</priority>
-	<changefreq>weekly</changefreq>
-</url>
-<url>
-	<loc>https://credolove.com/demo1</loc>
-	<lastmod>2017-05-21T01:27:32+03:00</lastmod>
-	<priority>0.10</priority>
-	<changefreq>weekly</changefreq>
-</url>
-<url>
-	<loc>https://credolove.com/demo2</loc>
-	<lastmod>2017-05-21T01:27:32+03:00</lastmod>
-	<priority>0.10</priority>
-	<changefreq>weekly</changefreq>
-</url>
-<url>
-	<loc>https://credolove.com/demo4</loc>
-	<lastmod>2017-05-21T01:27:32+03:00</lastmod>
-	<priority>0.10</priority>
-	<changefreq>weekly</changefreq>
 </url>
 </urlset>
